@@ -90,10 +90,6 @@ input, select, textarea {
 		box-sizing: border-box;
 	}
 
-	*, *:before, *:after {
-		box-sizing: inherit;
-	}
-
 	body {
 		background: #1b1f22;
 	}
@@ -1350,7 +1346,6 @@ input, select, textarea {
 			#header nav ul li {
 				padding-left: 0;
 				border-left: solid 1px #ffffff;
-				width: 170px;
 			}
 
 				#header nav ul li:first-child {
@@ -1494,6 +1489,7 @@ input, select, textarea {
 							line-height: 3rem;
 							min-width: 0;
 							width: 100%;
+							display: contents;
 						}
 
 				#header nav.use-middle:after {
