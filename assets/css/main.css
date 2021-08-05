@@ -1689,3 +1689,9 @@ input, select, textarea {
 #header nav ul li#deuxlignes a {
 	line-height: 1.5rem;
 }
+
+/* centrer bouton */
+
+ul.actions li {
+	margin: 0 auto;
+}
