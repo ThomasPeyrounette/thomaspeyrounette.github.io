@@ -399,3 +399,14 @@
 					});
 
 })(jQuery);
+
+function load_iframes() {
+    var list = document.getElementsByTagName("iframe");
+    for (let item of list) {
+        let str = item.getAttribute("data-src");
+        if(str) {
+            item.src = str;
+        }
+        item.loading = "lazy";
+    }
+}
