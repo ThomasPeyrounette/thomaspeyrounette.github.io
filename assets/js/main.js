@@ -400,13 +400,13 @@
 
 })(jQuery);
 
-function loadFrame(ID, URL) {
-  var ifrm = document.createElement("iframe");
-  ifrm.src = URL;
-  ifrm.style.width = "100%";
-  ifrm.style.height = "166";
-  ifrm.loading = "lazy";
-  ifrm.style.border = "None";
-  ifrm.style.visibility = "visible";
-  document.getElementById(ID).appendChild(ifrm);
+function load_iframes() {
+    var list = document.getElementsByTagName("iframe");
+    for (let item of list) {
+        let str = item.getAttribute("data-src");
+        if(str) {
+            item.src = str;
+        }
+        item.loading = "lazy";
+    }
 }
