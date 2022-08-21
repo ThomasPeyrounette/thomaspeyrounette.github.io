@@ -1704,3 +1704,22 @@ iframe.soundcloud {
 ul.actions li {
 	margin: 0 auto;
 }
+
+/* images références */
+
+.references {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+.references a {
+	border: none;
+	flex: 0 0 20%;
+}
+
+.references img {
+	width: 100%
+}
