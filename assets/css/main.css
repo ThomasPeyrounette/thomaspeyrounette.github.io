@@ -1730,5 +1730,15 @@ h2.major {
 }
 
 h3 {
-	/*color:rgb(169, 161, 149);*/
+	color:#BED9B6ff;
+}
+
+.button.primary {
+	background-color: #BED9B6ff;
+	border-color: #BED9B6ff;
+	box-shadow: none;
+}
+
+hr {
+	border-bottom-color: #BED9B6ff;
 }
