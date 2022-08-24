@@ -1549,7 +1549,7 @@ input, select, textarea {
 			position: relative;
 			width: 40rem;
 			max-width: 100%;
-			background-color: rgb(21 50 72 / 50%);
+			background-color: rgba(57, 101, 101, 0.842);
 			border-radius: 4px;
 			opacity: 0;
 		}
@@ -1722,4 +1722,13 @@ ul.actions li {
 
 .references img {
 	width: 100%
+}
+
+h2.major {
+	color: #BED9B6ff;
+	border-bottom-color: #BED9B6ff;
+}
+
+h3 {
+	/*color:rgb(169, 161, 149);*/
 }
