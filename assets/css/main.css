@@ -1747,7 +1747,13 @@ hr {
 /* Tableau pour images */
 
 #table_images{
-	width:100%;
+	max-width:100%;
 	text-align: center;
 	vertical-align: middle;
+	height: auto;
+}
+
+.responsive{
+	max-width:100%;
+	height: auto;
 }
