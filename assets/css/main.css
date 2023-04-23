@@ -1575,6 +1575,7 @@ input, select, textarea {
 				white-space: nowrap;
 			}
 
+
 				#main article .close:before {
 					-moz-transition: background-color 0.2s ease-in-out;
 					-webkit-transition: background-color 0.2s ease-in-out;
