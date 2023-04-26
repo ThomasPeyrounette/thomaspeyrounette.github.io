@@ -1760,3 +1760,7 @@ hr {
 	height: auto;
 	object-fit: contain;
 }
+
+img{
+	max-width: 100%;
+}
