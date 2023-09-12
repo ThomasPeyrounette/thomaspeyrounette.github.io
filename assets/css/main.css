@@ -1816,3 +1816,8 @@ hr {
 img{
 	max-width: 100%;
 }
+
+.encadre{ 
+	border: 3px solid #BED9B6ff ;
+	padding: 3px; 
+}
