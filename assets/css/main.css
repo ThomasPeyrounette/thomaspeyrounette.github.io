@@ -1747,7 +1747,6 @@ iframe.soundcloud {
     width: 100%;
     height: auto; /* 166 */
     border: none;
-	min-width: 400px;
 }
 
 /* bouton d'accueil sur deux lignes avec un <br> */
