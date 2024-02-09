@@ -1743,7 +1743,7 @@ input, select, textarea {
 }
 
 /* soundcloud embeds */
-iframe.soundcloud {
+iframe.bandcamp {
     width: 100%;
     height: auto; /* 166 */
     border: none;
