@@ -1833,3 +1833,7 @@ img{
 	margin-right: auto;
 	width: 60%;
 }
+
+.image_border{
+	border: 2px solid rgb(255, 255, 255);
+}
