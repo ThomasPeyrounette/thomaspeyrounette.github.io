@@ -1837,3 +1837,7 @@ img{
 .image_border{
 	border: 2px solid rgb(255, 255, 255);
 }
+
+.album_width{
+	width: 230px;
+}
