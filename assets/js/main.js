@@ -417,3 +417,43 @@ function load_iframes() {
         item.loading = "lazy";
     }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+	// Récupérez l'élément du lecteur Bandcamp
+	var bandcampPlayer = document.querySelector('.bandcamp');
+  
+	// Ajoutez un écouteur d'événement pour détecter le début de la lecture
+	bandcampPlayer.addEventListener('play', function () {
+	  // Affichez la fenêtre modale
+	  document.getElementById('bandcampModal').style.display = 'block';
+  
+	  // Récupérez l'URL de l'embed player Bandcamp
+	  var bandcampEmbedUrl = bandcampPlayer.getAttribute('data-embed');
+  
+	  // Mettez à jour l'URL avec les nouveaux paramètres
+	  var updatedEmbedUrl = bandcampEmbedUrl.replace('size=large', 'size=small').replace('tracklist=true', 'tracklist=false');
+  
+	  // Créez un nouvel élément iframe avec l'URL mis à jour
+	  var modalBandcampPlayer = document.createElement('iframe');
+	  modalBandcampPlayer.src = updatedEmbedUrl;
+	  modalBandcampPlayer.width = '100%';
+	  modalBandcampPlayer.height = '200';  // Ajustez la hauteur selon vos besoins
+  
+	  // Ajoutez le lecteur Bandcamp à la fenêtre modale
+	  document.getElementById('modalBandcampPlayer').appendChild(modalBandcampPlayer);
+  
+	  // Affichez le lecteur Bandcamp dans la fenêtre modale
+	  modalBandcampPlayer.style.display = 'block';
+	});
+  
+	// Ajoutez un écouteur d'événement pour fermer la fenêtre modale
+	document.getElementById('bandcampModal').addEventListener('click', function () {
+	  // Cachez la fenêtre modale
+	  document.getElementById('bandcampModal').style.display = 'none';
+  
+	  // Supprimez le lecteur Bandcamp de la fenêtre modale
+	  var modalBandcampPlayer = document.getElementById('modalBandcampPlayer');
+	  modalBandcampPlayer.innerHTML = '';
+	  modalBandcampPlayer.style.display = 'none';
+	});
+  });

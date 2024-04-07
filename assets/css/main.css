@@ -948,6 +948,7 @@ input, select, textarea {
 			border: solid 0px #ffffff;
 			border-left: 0;
 			border-right: 0;
+			width: auto;
 		}
 
 			table tbody tr:nth-child(2n + 1) {
@@ -955,8 +956,9 @@ input, select, textarea {
 			}
 
 		table td {
+			border: solid 0px #ffffff;
 			padding: 0.75em 0.75em;
-			width: 50%;
+			width: auto;
 		}
 
 		table th {
@@ -1840,4 +1842,27 @@ img{
 
 .album_width{
 	width: 230px;
+}
+
+.menu_pic_width{
+	width: 356px;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	z-index: 1;
+}
+
+.modal-content {
+	max-width: 600px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 20px;
+	text-align: center;
 }
