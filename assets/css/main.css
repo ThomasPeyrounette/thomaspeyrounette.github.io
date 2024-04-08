@@ -942,6 +942,7 @@ input, select, textarea {
 	table {
 		margin: 0 0 2rem 0;
 		width: 100%;
+		border-collapse: collapse;
 	}
 
 		table tbody tr {
@@ -949,6 +950,7 @@ input, select, textarea {
 			border-left: 0;
 			border-right: 0;
 			width: auto;
+			text-align: center;
 		}
 
 			table tbody tr:nth-child(2n + 1) {
@@ -959,6 +961,9 @@ input, select, textarea {
 			border: solid 0px #ffffff;
 			padding: 0.75em 0.75em;
 			width: auto;
+			white-space: nowrap; /* empêche le texte de passer à la ligne auto */
+			overflow: hidden; /* Cache ce qui dépasse de la cellule */
+			text-overflow: ellipsis; /* Affiche des points de suspension */
 		}
 
 		table th {
@@ -1222,6 +1227,24 @@ input, select, textarea {
 
 			#wrapper {
 				padding: 3rem 2rem;
+			}
+
+		}
+
+		@media screen and (max-width: 1000px) {
+
+			table td {
+				display: block;
+				width: 100%;
+				text-align: center;
+			}
+
+			table th {
+				display: none; /* cache les en-têtes de colonne */
+			}
+
+			table tbody tr:nth-child(2n+1) {
+				background-color: rgba(255, 255, 255, 0); /* ajustement pour les lignes impaires */
 			}
 
 		}
@@ -1744,7 +1767,7 @@ input, select, textarea {
     height: 100%;
 }
 
-/* soundcloud embeds */
+/* bandcamp embeds */
 iframe.bandcamp {
     width: 100%;
     height: auto; /* 166 */
