@@ -31,6 +31,14 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	-webkit-text-size-adjust: none;
+	min-width: 320px;
+	background: #1b1f22;
+	color: #ffffff;
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 300;
+	font-size: 1rem;
+	line-height: 1.65;
 }
 
 ol, ul {
@@ -47,12 +55,9 @@ blockquote, q {
 	}
 
 table {
+	margin: 0 auto; /* centre la table horizontalement */
 	border-collapse: collapse;
 	border-spacing: 0;
-}
-
-body {
-	-webkit-text-size-adjust: none;
 }
 
 mark {
@@ -80,7 +85,7 @@ input, select, textarea {
 
 	@media screen and (max-width: 480px) {
 
-		html, body {
+		html {
 			min-width: 320px;
 		}
 
@@ -93,10 +98,6 @@ input, select, textarea {
 	
 	*, *:before, *:after {
 		box-sizing: inherit;
-	}
-
-	body {
-		background: #1b1f22;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -140,7 +141,7 @@ input, select, textarea {
 
 		}
 
-	body, input, select, textarea {
+	input, select, textarea {
 		color: #ffffff;
 		font-family: "Source Sans Pro", sans-serif;
 		font-weight: 300;
@@ -1232,6 +1233,10 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 1000px) {
+
+			table {
+				margin: 0; /*  Réinitialise la marge pour laisser les cellules se déplacer librement */
+			}
 
 			table td {
 				display: block;
