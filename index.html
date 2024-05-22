@@ -20,23 +20,20 @@
 	</head>
 	<body class="is-preload" onload="load_iframes()">
 
+
 		<!-- Wrapper -->
 			<div id="wrapper">
 
-
-
-
+				<div id="myModal" class="modal">
+					<div class="modal-content" id="arctic-swells">
+						<span class="close"></span>
+						<!-- Insérez le même iframe ou un contenu différent si nécessaire -->
+						<iframe loading="lazy" class="bandcamp" style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=3527824135/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/autoplay=true/" seamless><a href="https://thomaspeyrounette.bandcamp.com/track/arctic-swells">Arctic Swells by Thomas Peyrounette</a></iframe>
+					</div>
+				</div>
 
 				<!-- Header -->
 					<header id="header">
-
-						<!-- Modal Window -->
-
-						<div class="modal" id="bandcampModal">
-							<div class="modal-content">
-								<div id="modalBandcampPlayer"></div>
-							</div>
-						</div>
 
 						<div class="content">
 							<div class="inner">
@@ -54,10 +51,6 @@
 							</ul>
 						</nav>
 					</header>
-
-
-
-
 
 				<!-- Main -->
 					<div id="main">
@@ -121,22 +114,26 @@
 
 							<article id="dernieresparutions">
 								<h2 style="color:#BED9B6ff"; class="encadre"><center>Dernières parutions <br> compositions personnelles</center></h2>
-								<br>
-									<!-- <h2 class="major">Arctic Swells</h2> -->
-									<p><iframe id="perso8" loading="lazy" class="bandcamp" style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=3527824135/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://thomaspeyrounette.bandcamp.com/track/arctic-swells">Arctic Swells by Thomas Peyrounette</a></iframe></p>
+
+								<div class="iframe-container">
+									<iframe id="arctic-swells" loading="lazy" class="bandcamp" style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=3527824135/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/auto_play=true" seamless><a href="https://thomaspeyrounette.bandcamp.com/track/arctic-swells">Arctic Swells by Thomas Peyrounette</a></iframe>
+									<div class="iframe-overlay-play"></div>
+									<div class="iframe-overlay-pic"></div>
+								</div>
 								<br>
 									<!-- <h2 class="major">Electrojazzy Day</h2> -->
-									<p><iframe id="perso7" loading="lazy" class="bandcamp" style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=161031745/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://thomaspeyrounette.bandcamp.com/track/electrojazzy-day">Electrojazzy Day by Thomas Peyrounette</a></iframe></p>
-										<!--
-											<iframe class="bandcamp" height="166" scrolling="no" frameborder="no" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1640100609&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-										-->
+								<div class="iframe-container">	
+									<iframe id="electrojazzy-day" loading="lazy" class="bandcamp" style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=161031745/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://thomaspeyrounette.bandcamp.com/track/electrojazzy-day">Electrojazzy Day by Thomas Peyrounette</a></iframe>
+									<div class="iframe-overlay-play"></div>
+									<di class="iframe-overlay-pic"></di>
+								</div>
 								<br>
 									<!-- <h2 class="major">Echoes</h2> -->
-									<p><iframe id="perso6" loading="lazy" class="bancamp" style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=2304580016/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://thomaspeyrounette.bandcamp.com/track/echoes">Echoes by Thomas Peyrounette</a></iframe></p>
-
-									<!--
-										<iframe class="bandcamp" height="166" scrolling="no" frameborder="no" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1330935715&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-									-->
+								<div class="iframe-container">
+									<p><iframe id="echoes" loading="lazy" class="bancamp" style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=2304580016/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://thomaspeyrounette.bandcamp.com/track/echoes">Echoes by Thomas Peyrounette</a></iframe></p>
+									<div class="iframe-overlay-play"></div>
+									<div class="iframe-overlay-pic"></div>
+								</div>	
 							</article>
 
 							<article id="playlist">
@@ -162,67 +159,7 @@
 							</article>
 
 						<!-- Musique à l'image -->
-							<!-- <article id="musiquealimage">
-								<h2 class="major">Musique à l'image</h2>
-									<nav>
-											<br>
-											<a href="#dernieresparutionsost">
-												<img loading="lazy" src="images/dernieresparutions.png" class="center image_border">
-												<h4 style="text-align: center;">Dernières parutions <br> composition à l'image</h4>
-											</a>
-											<hr>
-
-										<table id="table_images">
-											<tr>
-												<td>
-													<a href="#animations">
-														<img loading="lazy" src="images/animations.png" class="responsive image_border"/>
-														<h4>Animations</h4>
-													</a>
-												</td>
-												<td>
-													<a href="#jeuxvideo">
-														<img loading="lazy" src="images/jeuxvideo.png" class="responsive image_border"/>
-														<h4>Jeux vidéo</h4>
-													</a>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<a href="#prisedevuereelle">
-														<img loading="lazy" src="images/prisedevuereelle.png" class="responsive image_border"/>
-														<h4>Prise de vue réelle</h4>
-													</a>
-												</td>
-												<td>
-													<a href="#documentaire">
-														<img loading="lazy" src="images/documentaire.jpg" width="356px" class="responsive image_border"/>
-														<h4>Documentaires</h4>
-													</a>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<a href="#interviews">
-														<img loading="lazy" src="images/interviews.jpeg" width="356px" class="responsive image_border"/>
-														<h4>Interviews</h4>
-													</a>
-												</td>
-												<td>
-													<a href="#siteinternet">
-														<img loading="lazy" src="images/media.jpeg" class="responsive image_border"/>
-														<h4>Sites internet</h4>
-													</a>
-												</td>
-											</tr>
-										</table>	
-									</nav>
-
-								<ul class="actions">
-									<li><a href="#contact" class="button primary">Me contacter</a></li>
-								</ul>
-							</article> -->
-
+							
 							<article style="width: auto;" id="musiquealimage">
 								<h2 class="major">Musique à l'image</h2>
 									<nav>
@@ -628,9 +565,6 @@
 									<p>Le concours <a href="https://concours7emeson.wixsite.com/le7emeson"><strong>Le 7e son</strong></a> est un concours de composition pour film d'animation organisé par l'ICART Lyon et l'Université Lyon 2 dans lequel deux films ont été proposés afin de composer une musique sur l'un d'entre eux : "Le chêne et le roseau" (Laureline Lavandier) et "Sur les rails" (Jérémy Guiter).</p>
 									<p><strong>Finaliste</strong> de ce concours avec "Le chêne et le roseau" je vous propose ici mon travail sur ces images.</p>
 									<p><iframe id="anim7" loading="lazy" class="bandcamp" style="border: 0; width: 100%; height: 274px;" src="https://bandcamp.com/EmbeddedPlayer/album=240123256/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="https://thomaspeyrounette.bandcamp.com/album/le-ch-ne-et-le-roseau">Le Chêne Et Le Roseau by Thomas Peyrounette</a></iframe></p>
-										<!--
-											<iframe class="bandcamp" height="350" scrolling="no" frameborder="no" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1488821704&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-										-->
 									<p><div class="video-container"><iframe loading="lazy" data-src="https://www.youtube-nocookie.com/embed/cFIdBjIj7F8" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></p>
 								</article>
 
@@ -641,9 +575,6 @@
 									<p><i><u>Synopsis</u> : Lino, un jeune garçon de 15 ans, ne comprend pas le monde qui l’entoure. Il sort prendre l'air et va alors être confronté au monde extérieur.
 									</i></p>
 									<p><iframe id="anim6" loading="lazy" class="bandcamp" style="border: 0; width: 100%; height: 241px;" src="https://bandcamp.com/EmbeddedPlayer/album=1652341254/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="https://thomaspeyrounette.bandcamp.com/album/magenta">Magenta by Thomas Peyrounette</a></iframe></p>
-										<!--
-										<iframe class="bandcamp" height="350" scrolling="no" frameborder="no" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1488814006&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-										-->
 									<p><div class="video-container"><iframe loading="lazy" data-src="https://www.youtube-nocookie.com/embed/CmYU3SkUyXQ" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></p>
 								</article>
 
@@ -653,9 +584,6 @@
 									<p>Film d'animation réalisé par <i>Mathilde Bertrand</i>, étudiante en école d'animation chez <a href="https://www.ecole-pivaut.fr/"><strong>Pivaut</strong></a>.</p>
 									<p><i><u>Synopsis</u> : Poursuivi dans une forêt, un jeune garçon tente d’échapper aux crocs acérés de la bête qui le chasse. Mais l’enfant devra alors apprendre et comprendre qui il est pour réaliser que les obstacles ne sont parfois pas ceux qu’on croit.</i></p>
 									<p><iframe id="anim5" loading="lazy" class="bandcamp" style="border: 0; width: 100%; height: 373px;" src="https://bandcamp.com/EmbeddedPlayer/album=1297802276/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="https://thomaspeyrounette.bandcamp.com/album/mot-na">Motùna by Thomas Peyrounette</a></iframe></p>
-										<!--
-										<iframe class="bandcamp" height="350" scrolling="no" frameborder="no" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1296831775&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-										-->
 									<p><div class="video-container"><iframe loading="lazy" data-src="https://www.youtube-nocookie.com/embed/ODEcdHxm05U" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></p>
 								</article>
 
@@ -665,9 +593,6 @@
 									<p>Film d'animation réalisé par <i>Hermine de Laganlerie</i>, étudiante à l'école d'animation <a href="https://www.ecole-pivaut.fr/"><strong>Pivaut</strong></a> de Nantes.</p>
 									<p><i><u>Synopsis</u> : Tota est un centaure qui rêve de voler. Passionné par les oiseaux, il va un jour faire la rencontre d'une créature céleste blessée.</i></p>
 									<p><iframe id="anim4" loading="lazy" class="bandcamp" style="border: 0; width: 100%; height: 274px;" src="https://bandcamp.com/EmbeddedPlayer/album=818959481/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="https://thomaspeyrounette.bandcamp.com/album/les-ailes-de-tota">Les Ailes De Tota by Thomas Peyrounette</a></iframe></p>
-										<!--
-										<iframe class="bandcamp" height="350" scrolling="no" frameborder="no" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1488809044&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-										-->
 									<p><div class="video-container"><iframe loading="lazy" data-src="https://www.youtube-nocookie.com/embed/tn2p9aTLShU" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></p>
 								</article>
 
@@ -677,9 +602,6 @@
 									<p>Film d'animation réalisé par <i>Justine Gouvernet</i> et <i>Chloé Irles</i>, étudiantes en école d'animation chez <a href="https://www.ecv.fr/"><strong>ECV</strong></a>.</p>
 									<p><i><u>Synopsis</u> : Alors qu'elle rend visite à son mari souffrant à l'hôpital, Mme Richard se remémore sa vie à ses côtés.</i></p>
 									<p><iframe id="anim3" loading="lazy" class="bandcamp" style="border: 0; width: 100%; height: 208px;" src="https://bandcamp.com/EmbeddedPlayer/album=1332416942/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="https://thomaspeyrounette.bandcamp.com/album/avec-le-temps">Avec Le Temps by Thomas Peyrounette</a></iframe></p>
-										<!--
-										<iframe class="bandcamp" height="350" scrolling="no" frameborder="no" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1296846901&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-										-->
 									<p><div class="video-container"><iframe loading="lazy" data-src="https://www.youtube.com/embed/CidczYXtQOE" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></p>
 								</article>
 
@@ -689,9 +611,6 @@
 									<p>Film d'animation réalisé par <i>Adèle Grall</i>, étudiante en école d'animation chez <a href="https://www.ecole-pivaut.fr/"><strong>Pivaut</strong></a>.</p>
 									<p><i><u>Synopsis</u> : Airi et Sasha ont l’habitude de s’amuser ensemble. Seulement ils appartiennent à deux mondes différents ; Airi est une souris blanche, issue d’une famille riche, Sasha est un chat noir, venant d’un milieu beaucoup plus modeste. La mère d’Airi voit d’un mauvais œil cette relation et éloigne sa fille le plus possible de Sasha. Malgré leurs différences, le lien fort qui unit les deux enfants leur permet de se retrouver des années plus tard.</i></p>
 									<p><iframe id="anim2" loading="lazy" class="bandcamp" style="border: 0; width: 100%; height: 274px;" src="https://bandcamp.com/EmbeddedPlayer/album=3724693584/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="https://thomaspeyrounette.bandcamp.com/album/chlorophylle">Chlorophylle by Thomas Peyrounette</a></iframe></p>
-										<!--
-											<iframe class="bandcamp" height="300" scrolling="no" frameborder="no" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1296838276&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-										-->
 									<p><div class="video-container"><iframe loading="lazy" data-src="https://www.youtube-nocookie.com/embed/zwGSgqzkCwQ" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></p>
 								</article>
 
@@ -701,9 +620,6 @@
 									<p>Film d'animation réalisé par <i>Selene Pitton</i>, étudiante en école d'animation chez <a href="https://www.ecole-pivaut.fr/"><strong>Pivaut</strong></a>.</p>
 									<p><i><u>Synopsis</u> : Alors qu'une grand-mère prépare son café, un super-héros combat un super-vilain à sa fenêtre.</i></p>
 									<p><iframe id="anim1" loading="lazy" class="bandcamp" style="border: 0; width: 100%; height: 241px;" src="https://bandcamp.com/EmbeddedPlayer/album=30807715/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="https://thomaspeyrounette.bandcamp.com/album/coffee-break">Coffee Break by Thomas Peyrounette</a></iframe></p>
-										<!--
-											<iframe class="bandcamp" height="300" scrolling="no" frameborder="no" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1296837811&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-										-->
 									<p><div class="video-container"><iframe loading="lazy" data-src="https://www.youtube-nocookie.com/embed/_eXiVx1qfS4" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></p>
 								</article>
 
@@ -775,9 +691,6 @@
 										<p><i><u>Synopsis</u> : Un Youtubeur et son ami visitent une abbaye abandonnée pour faire une vidéo. Rapidement, ils se rendent compte que le lieu n'est pas si abandonné que ça et notre héros se retrouve isolé, avec appareil photo pour seule arme.
 										</i></p>
 										<p><iframe id="jv3" loading="lazy" class="bandcamp" style="border: 0; width: 100%; height: 307px;" src="https://bandcamp.com/EmbeddedPlayer/album=3793400254/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="https://thomaspeyrounette.bandcamp.com/album/take-a-shot">Take A Shot by Thomas Peyrounette</a></iframe></p>
-											<!--
-												<iframe class="bandcamp" height="350" scrolling="no" frameborder="no" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1488831664&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-											-->
 										<p><div class="video-container"><iframe loading="lazy" data-src="https://www.youtube-nocookie.com/embed/9ElXA5GEI1g" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></p>
 									</article>
 
@@ -787,9 +700,6 @@
 										<p>Jeu vidéo réalisé par <i>Florian Soret</i>, <i>Félix Leroy</i>, <i>François Chapoule</i> et <i>Lucas Flamein</i> dans le cadre de leurs études chez <a href="https://www.ecv.fr/lecole/lille/"><strong>ECV Lille</strong></a>.</p>
 										<p><i><u>Synopsis</u> : Plongé dans le folklore japonais durant l'époque Edo, un jeune villageois doit sauver le village des ténèbres en restaurant la lumière dans un temple sacré tenu par l’Oni des Ombres.</i></p>
 										<p><iframe id="jv2" loading="lazy" class="bandcamp" style="border: 0; width: 100%; height: 307px;" src="https://bandcamp.com/EmbeddedPlayer/album=3905249455/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="https://thomaspeyrounette.bandcamp.com/album/hikari">Hikari by Thomas Peyrounette</a></iframe></p>
-											<!--
-											<iframe class="bandcamp" height="350" scrolling="no" frameborder="no" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1296839281&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-											-->
 									</article>
 
 								<!-- The Epopee of Hylas -->	
@@ -798,9 +708,6 @@
 										<p>Jeu vidéo réalisé par <i>François Chapoule</i>, <i>Marie-Emilie Guilleman</i>, <i>Florian Soret</i> et <i>Edouard Stoppe</i> dans le cadre de leurs études chez <a href="https://www.ecv.fr/lecole/lille/"><strong>ECV Lille</strong></a> en Master 2.</p>
 										<p><i><u>Synopsis</u> : Hylas, un petit félin humanoïde, est missionné afin de réparer les divers bâtiments des îles ravagées par Hadès qui a emprisonné les Dieux, empêchant leur intervention sur Terre. Hylas va pouvoir faire ses preuves en rénovant les habitations et libérer le contact avec les Dieux.</i></p>
 										<p><iframe id="jv1" loading="lazy" class="bandcamp" style="border: 0; width: 100%; height: 472px;" src="https://bandcamp.com/EmbeddedPlayer/album=3801067522/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="https://thomaspeyrounette.bandcamp.com/album/the-epopee-of-hylas">The Epopee of Hylas by Thomas Peyrounette</a></iframe></p>
-											<!--
-												<iframe class="bandcamp" height="350" scrolling="no" frameborder="no" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1639862233&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-											-->
 										<p><div class="video-container"><iframe loading="lazy" data-src="https://www.youtube-nocookie.com/embed/LkZiIgAkPpE" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></p>
 									</article>
 
@@ -881,9 +788,6 @@
 									<p>Le <a href="https://www.soundtrackcologne.de/competitions/european-talent-competition/"><strong>European Talent Competition</strong></a> est un concours de composition à l'image organisé dans le cadre du congrès européen de la musique et du son dans l'univers audiovisuel, <strong>Soundtrack Cologne</strong>.</p>
 									<p>Honoré d'être à nouveau <strong>finaliste</strong> de ce concours, je vous fais part de ma proposition musicale.</p>
 									<p><iframe id="film3" loading="lazy" class="bandcamp" style="border: 0; width: 100%; height: 307px;" src="https://bandcamp.com/EmbeddedPlayer/album=3413822468/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="https://thomaspeyrounette.bandcamp.com/album/unvernunft">UnVernunft by Thomas Peyrounette</a></iframe></p>
-										<!--
-											<iframe class="bandcamp" height="350" scrolling="no" frameborder="no" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1689325875&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-										-->
 									<p><div class="video-container"><iframe loading="lazy" data-src="https://www.youtube-nocookie.com/embed/FXyXx_llAYc" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></p>
 								</article>
 
@@ -893,9 +797,6 @@
 										<p>Le <a href="https://www.soundtrackcologne.de/competitions/european-talent-competition/"><strong>European Talent Competition</strong></a> est un concours de composition à l'image organisé dans le cadre du congrès européen de la musique et du son dans l'univers audiovisuel, <strong>Soundtrack Cologne</strong>.</p>
 										<p>Honoré d'être <strong>finaliste</strong> de ce concours, je vous fais part de ma composition musicale.</p>
 										<p><iframe id="film2" loading="lazy" class="bandcamp" style="border: 0; width: 100%; height: 274px;" src="https://bandcamp.com/EmbeddedPlayer/album=3273994794/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="https://thomaspeyrounette.bandcamp.com/album/mall">Mall by Thomas Peyrounette</a></iframe></p>
-											<!--
-												<iframe class="bandcamp" height="350" scrolling="no" frameborder="no" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1689300390&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-											-->
 										<p><div class="video-container"><iframe loading="lazy" data-src="https://www.youtube-nocookie.com/embed/xR2z1ABLe1U" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></p>
 									</article>
 
@@ -906,9 +807,6 @@
 									<p>Musique composée en collaboration avec <a href="https://lucasbeaugas.wordpress.com/"><i>Lucas Beaugas</i></a>.</p>
 									<p><i><u>Synopsis</u> : Camille, une jeune scénariste, a le syndrome de la page blanche. Alors que sa supérieure exige des résultats dans les jours qui suivent, elle décide de prendre l'air. Munie de ses écouteurs, elle va alors laisser cours à son imagination face aux différentes scènes de tous les jours.</i></p>
 									<p><iframe id="film1" loading="lazy" class="bandcamp" style="border: 0; width: 100%; height: 340px;" src="https://bandcamp.com/EmbeddedPlayer/album=2427816030/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="https://thomaspeyrounette.bandcamp.com/album/mon-point-dans-ta-gueule">Mon Point Dans Ta Gueule by Lucas Beaugas &amp; Thomas Peyrounette</a></iframe></p>
-										<!--
-											<iframe class="bandcamp" height="350" scrolling="no" frameborder="no" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1296846238&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-										-->
 									<p><div class="video-container"><iframe loading="lazy" data-src="https://www.youtube-nocookie.com/embed/eWY4W04G2Xs" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></p>
 								</article>
 
@@ -965,9 +863,6 @@
 										<p>Site internet réalisé par des étudiants chez les <a href="https://www.gobelins.fr/"><i><strong>Gobelins: l'Ecole de l'Image</strong></i></a> à Annecy.</p>
 										<p>Musique composée en collaboration avec <a href="https://lucasbeaugas.wordpress.com/"><i>Lucas Beaugas</i></a>.</p>
 										<p><iframe id="site1" loading="lazy" class="bandcamp" style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1478678791/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://thomaspeyrounette.bandcamp.com/album/keskidi">Keskidi by Thomas Peyrounette</a></iframe></p>
-											<!--
-												<iframe class="bandcamp" height="166" scrolling="no" frameborder="no" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1100592313&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-											-->
 									</article>
 
 						<!-- Documentaires -->
@@ -980,13 +875,13 @@
 										<td>
 											<a href="#laveritesurlesenvahisseurs2">
 												<img loading="lazy" src="images/verite.png" class="responsive image_border album_width"/>
-												<h4>La vérité sur les envahisseurs ep2 (2023)</h4>
+												<h4>La vérité sur<br>les envahisseurs<br>ep2 (2023)</h4>
 											</a>
 										</td>
 										<td>
 											<a href="#laveritesurlesenvahisseurs1">
 												<img loading="lazy" src="images/verite.png" class="responsive image_border album_width"/>
-												<h4>La vérité sur les envahisseurs ep1 (2023)</h4>
+												<h4>La vérité sur<br>les envahisseurs<br>ep1 (2023)</h4>
 											</a>
 										</td>
 									</tr>
@@ -994,7 +889,7 @@
 										<td>
 											<a href="#lartdevoirautrement">
 												<img loading="lazy" src="images/lartdevoir.jpeg" class="responsive image_border album_width">
-												<h4>L'art de voir autrement (2023)</h4>
+												<h4>L'art de voir<br>autrement (2023)</h4>
 											</a>
 										</td>
 										<td>
@@ -1060,17 +955,17 @@
 										</a>
 									</td>
 									<td>
-										<a 
+										<a>
 										</a>
 									</td>
 								</tr>
 								<tr>
 									<td>
-										<a 
+										<a>
 										</a>
 									</td>
 									<td>
-										<a 
+										<a>
 										</a>
 									</td>
 								</tr>

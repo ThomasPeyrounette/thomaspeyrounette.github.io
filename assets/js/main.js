@@ -418,42 +418,92 @@ function load_iframes() {
     }
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-	// Récupérez l'élément du lecteur Bandcamp
-	var bandcampPlayer = document.querySelector('.bandcamp');
-  
-	// Ajoutez un écouteur d'événement pour détecter le début de la lecture
-	bandcampPlayer.addEventListener('play', function () {
-	  // Affichez la fenêtre modale
-	  document.getElementById('bandcampModal').style.display = 'block';
-  
-	  // Récupérez l'URL de l'embed player Bandcamp
-	  var bandcampEmbedUrl = bandcampPlayer.getAttribute('data-embed');
-  
-	  // Mettez à jour l'URL avec les nouveaux paramètres
-	  var updatedEmbedUrl = bandcampEmbedUrl.replace('size=large', 'size=small').replace('tracklist=true', 'tracklist=false');
-  
-	  // Créez un nouvel élément iframe avec l'URL mis à jour
-	  var modalBandcampPlayer = document.createElement('iframe');
-	  modalBandcampPlayer.src = updatedEmbedUrl;
-	  modalBandcampPlayer.width = '100%';
-	  modalBandcampPlayer.height = '200';  // Ajustez la hauteur selon vos besoins
-  
-	  // Ajoutez le lecteur Bandcamp à la fenêtre modale
-	  document.getElementById('modalBandcampPlayer').appendChild(modalBandcampPlayer);
-  
-	  // Affichez le lecteur Bandcamp dans la fenêtre modale
-	  modalBandcampPlayer.style.display = 'block';
-	});
-  
-	// Ajoutez un écouteur d'événement pour fermer la fenêtre modale
-	document.getElementById('bandcampModal').addEventListener('click', function () {
-	  // Cachez la fenêtre modale
-	  document.getElementById('bandcampModal').style.display = 'none';
-  
-	  // Supprimez le lecteur Bandcamp de la fenêtre modale
-	  var modalBandcampPlayer = document.getElementById('modalBandcampPlayer');
-	  modalBandcampPlayer.innerHTML = '';
-	  modalBandcampPlayer.style.display = 'none';
-	});
-  });
+
+// test player maison
+
+document.querySelector('.iframe-overlay-play').addEventListener('click', function() {
+	document.getElementById('myModal').style.display = 'flex';
+});
+
+document.querySelector('.iframe-overlay-pic').addEventListener('click', function() {
+	document.getElementById('myModal').style.display = 'flex';
+});
+
+document.querySelector('.close').addEventListener('click', function() {
+	event.stopPropagation();
+	document.getElementById('myModal').style.display = 'none';
+});
+
+window.onclick = function(event) {
+	if (event.target == document.getElementById('myModal')) {
+	document.getElementById('myModal').style.display = 'none';
+	}
+}
+
+// Récupération infos iframes
+
+// Fonction pour récupérer les informations de l'iframe
+/* function getInfoFromIframe(id) {
+    // Sélection de la div contenant l'iframe par son ID
+    var divContainer = document.getElementById(id);
+
+    // Vérification si la div existe
+    if (divContainer) {
+        // Sélection de l'iframe dans la div
+        var iframe = divContainer.querySelector('iframe');
+
+        // Vérification si l'iframe existe
+        if (iframe) {
+            // Récupération des informations de l'iframe
+            var iframeSrc = iframe.src;
+            var iframeWidth = iframe.width;
+            var iframeHeight = iframe.height;
+
+			// Itiliser les infos récoltées pour réécrire l'URL dans 'myModal'
+
+
+            // Affichage des informations dans la console
+            console.log("Source de l'iframe :", iframeSrc);
+            console.log("Largeur de l'iframe :", iframeWidth);
+            console.log("Hauteur de l'iframe :", iframeHeight);
+
+            // Vous pouvez faire ce que vous voulez avec ces informations
+            // Par exemple, les afficher dans une autre div, les envoyer à un serveur, etc.
+        } else {
+            console.log("Aucune iframe trouvée dans la div.");
+        }
+    } else {
+        console.log("La div spécifiée n'existe pas.");
+    }
+} */
+
+// test ouvrir Fenêtre Modale en fonction de l'ID (autre code)
+
+/* function openModal(playerId) {
+    var iframe = document.getElementById(playerId); // Récupération de l'iframe
+    var modalPlayer = document.getElementById('modalPlayer');
+    
+    // Clonage de l'iframe pour éviter de modifier l'original
+    var clonedIframe = iframe.cloneNode(true);
+    
+    // Suppression des attributs indésirables dans le clone
+    clonedIframe.removeAttribute('id');
+    clonedIframe.removeAttribute('class');
+    clonedIframe.removeAttribute('loading');
+    clonedIframe.style.height = 'auto'; // Ajustement de la hauteur
+    
+    // Nettoyage du contenu existant de la fenêtre modale
+    modalPlayer.innerHTML = '';
+    
+    // Ajout du lecteur Bandcamp cloné dans la fenêtre modale
+    modalPlayer.appendChild(clonedIframe);
+    
+    // Affichage de la fenêtre modale
+    document.getElementById('myModal').style.display = 'block';
+}
+
+// Écouteur d'événement pour ouvrir la fenêtre modale lors du clic sur le lien
+document.getElementById('openModalLink').addEventListener('click', function(event) {
+    event.preventDefault(); // Empêcher le comportement par défaut du lien
+    openModal('arctic-swells'); // Appel de la fonction openModal avec l'ID de l'iframe
+}); */
