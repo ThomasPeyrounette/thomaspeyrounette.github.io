@@ -1837,12 +1837,18 @@ hr {
 	text-align: center;
 	vertical-align: middle;
 	height: auto;
+	border-collapse: collapse;
+}
+
+#table_images td {
+	padding: 20px;
 }
 
 .responsive{
 	max-width:100%;
 	height: auto;
 	object-fit: contain;
+	width: 100%;
 }
 
 img{
@@ -1866,6 +1872,7 @@ img{
 
 .image_border{
 	border: 2px solid rgb(255, 255, 255);
+	border-radius: 5px;
 }
 
 .album_width{
@@ -1874,6 +1881,11 @@ img{
 
 .menu_pic_width{
 	width: 356px;
+	transition: transform 0.3s ease;
+}
+
+.menu_pic_width:hover {
+	transform: scale(1.1);
 }
 
 /* Text cadre */
@@ -1881,6 +1893,5 @@ img{
 	border: solid 2px #BED9B6ff;
 	display: inline-block;
 	padding: 10px;
-	width: fit-content;
 	margin: 20px;
 }
