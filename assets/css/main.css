@@ -1273,8 +1273,6 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		position: relative;
-		z-index: 1;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -1567,9 +1565,9 @@ input, select, textarea {
 		-webkit-flex-direction: column;
 		-ms-flex-direction: column;
 		flex-direction: column;
-		position: absolute;
+		position: relative;
 		max-width: 100%;
-		z-index: 2;
+		z-index: 3;
 	}
 
 		#main article {
@@ -1878,97 +1876,11 @@ img{
 	width: 356px;
 }
 
-
-
-
-
-/* test player maison */
-
-.iframe-container {
-	position: relative;
-	width: 100%;
-	height: 100%;
-}
-
-.iframe-overlay-play {
-	position: absolute;
-	z-index: 3;
-	top: 60px;
-	left: 130px;
-	width: 50px;
-	height: 50px;
-	background: rgb(255, 0, 0); /* transparent */
-	cursor: pointer; /* Change le curseur pour indiquer que c'est cliquable */
-}
-
-.iframe-overlay-pic {
-	position: absolute;
-	z-index: 3;
-	top: 0px;
-	left: 0px;
-	width: 120px;
-	height: 120px;
-	background-color: green;
-	cursor: pointer;
-}
-
-.modal {
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	display: none;
-	z-index: 3;
-	width: 450px;
-	height: 120px;
-	background-color: rgb(0, 0, 0);
-}
-
-.modal-content {
-	background-color: #fefefe;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	box-shadow: 0 0 10px rgb(134, 66, 23);
-}
-
-
-.modal-content .close {
-	display: block;
-	position: absolute;
-	top: -2rem;
-	right: -2rem;
-	width: 4rem;
-	height: 4rem;
-	cursor: pointer;
-	text-indent: 4rem;
-	overflow: hidden;
-	white-space: nowrap;
-}
-
-.modal-content .close:before {
-	-moz-transition: background-color 0.2s ease-in-out;
-	-webkit-transition: background-color 0.2s ease-in-out;
-	-ms-transition: background-color 0.2s ease-in-out;
-	transition: background-color 0.2s ease-in-out;
-	content: '';
-	display: block;
-	position: absolute;
-	top: 0.75rem;
-	left: 0.75rem;
-	width: 2.5rem;
-	height: 2.5rem;
-	border-radius: 100%;
-	background-color: rgb(80, 50, 30, 0.175);
-	background-position: center;
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 1%3B %7D%3C/style%3E%3Cline x1='2' y1='2' x2='18' y2='18' /%3E%3Cline x1='18' y1='2' x2='2' y2='18' /%3E%3C/svg%3E");
-	background-size: 20px 20px;
-	background-repeat: no-repeat;
-}
-
-.modal-content .close:hover:before {
-	background-color: rgb(80, 50, 30, 0.7);
-}
-
-.modal-content .close:active:before {
-	background-color: rgb(80, 50, 30, 0.9);
+/* Text cadre */
+.text_cadre {
+	border: solid 2px #BED9B6ff;
+	display: inline-block;
+	padding: 10px;
+	width: fit-content;
+	margin: 20px;
 }
