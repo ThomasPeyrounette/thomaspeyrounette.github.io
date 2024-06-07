@@ -1905,10 +1905,6 @@ img{
 	flex-wrap: wrap;
 }
 
-.content img {
-	max-width: 300px;
-}
-
 .poster {
 	max-width: 300px;
 	flex: 1 1 300px;
@@ -1917,5 +1913,5 @@ img{
 
 .description {
 	flex: 1 1 300px;
-	margin-left: 20px;
+	margin: 10px;
 }
