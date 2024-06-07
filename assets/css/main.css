@@ -1892,6 +1892,17 @@ img{
 .text_cadre {
 	border: solid 2px #BED9B6ff;
 	display: inline-block;
-	padding: 10px;
 	margin: 20px;
+}
+
+
+/* Content */
+.content {
+	display: flex;
+	align-items: center;
+	margin: 20px;
+}
+
+.content img {
+	max-width: 300px;
 }
