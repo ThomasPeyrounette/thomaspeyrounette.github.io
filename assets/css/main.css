@@ -1902,8 +1902,21 @@ img{
 	display: flex;
 	align-items: center;
 	margin: 20px;
+	flex-wrap: wrap;
 }
 
 .content img {
 	max-width: 300px;
+}
+
+.poster {
+	max-width: 300px;
+	flex: 1 1 300px;
+	display: flex;
+	margin: 10px;
+}
+
+.description {
+	flex: 1 1 300px;
+	margin-left: 20px;
 }
