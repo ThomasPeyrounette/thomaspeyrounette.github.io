@@ -1582,7 +1582,7 @@ input, select, textarea {
 			padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
 			position: relative;
 			width: 40rem;
-			max-width: 100%;
+			max-width: 1250px;
 			background-color: rgba(57, 101, 101, 0.842);
 			border-radius: 4px;
 			opacity: 0;
@@ -1838,6 +1838,8 @@ hr {
 	vertical-align: middle;
 	height: auto;
 	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #table_images td {
