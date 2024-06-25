@@ -1582,7 +1582,8 @@ input, select, textarea {
 			padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
 			position: relative;
 			width: 100%;
-			max-width: 1250px;
+			max-width: 1300px;
+			min-width: 800px;
 			background-color: rgba(57, 101, 101, 0.842);
 			border-radius: 4px;
 			opacity: 0;
@@ -1755,7 +1756,8 @@ input, select, textarea {
 .video-container {
     overflow: hidden;
     position: relative;
-    width:100%;
+    width: 1000px;
+	margin: 0 auto;
 }
 
 .video-container::after {
@@ -1916,4 +1918,13 @@ img{
 .description {
 	flex: 1 1 300px;
 	margin: 25px;
+}
+
+.iframe_container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	max-width: 700px;
+	margin: 0 auto;
 }
