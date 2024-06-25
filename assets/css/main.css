@@ -1566,6 +1566,7 @@ input, select, textarea {
 		-ms-flex-direction: column;
 		flex-direction: column;
 		position: relative;
+		width: 100%;
 		max-width: 100%;
 		z-index: 3;
 	}
@@ -1773,13 +1774,6 @@ input, select, textarea {
     height: 100%;
 }
 
-/* bandcamp embeds */
-iframe.bandcamp {
-    width: 100%;
-    height: auto; /* 166 */
-    border: none;
-}
-
 /* bouton d'accueil sur deux lignes avec un <br> */
 
 #header nav ul li#deuxlignes a {
@@ -1926,4 +1920,11 @@ img{
 	width: 100%;
 	max-width: 700px;
 	margin: 0 auto;
+}
+
+/* bandcamp embeds */
+iframe.bandcamp {
+    width: 100%;
+    height: auto; /* 166 */
+    border: none;
 }
