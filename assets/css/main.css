@@ -1893,6 +1893,10 @@ img{
 	padding: 10px;
 }
 
+.synopsis {
+	text-align: center;
+}
+
 
 /* Content */
 .content {
