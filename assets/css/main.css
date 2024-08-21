@@ -1932,3 +1932,11 @@ iframe.bandcamp {
     height: auto; /* 166 */
     border: none;
 }
+
+.ref_logo_width {
+		transition: transform 0.3s ease;
+}
+
+.ref_logo_width:hover {
+	transform: scale(1.1);
+}
