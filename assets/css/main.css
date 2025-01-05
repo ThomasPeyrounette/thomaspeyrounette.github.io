@@ -2081,7 +2081,7 @@ iframe.bandcamp {
 }
 
 .hide-pannel-content.show {
-	max-height: 5000px;
+	max-height: 10000px;
 	padding: 20px;
 }
 
