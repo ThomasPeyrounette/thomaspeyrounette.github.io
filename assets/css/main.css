@@ -1940,3 +1940,56 @@ iframe.bandcamp {
 .ref_logo_width:hover {
 	transform: scale(1.1);
 }
+
+
+/* hide/show pannel */
+
+.hide-pannel-container {
+	margin: 20px 0;
+}
+
+.hide-pannel-content {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+	padding: 0 20px;
+	border-radius: 5px;
+}
+
+.hide-pannel-content.show {
+	max-height: 5000px;
+	padding: 20px;
+}
+
+.hide-pannel-button-container {
+	text-align: center;
+	padding-top: 30px;
+}
+
+.hide-pannel-button-line-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.hide-pannel-button-line {
+	flex: 1;
+	border-top: 1px dashed white;
+	margin: 0 10px;
+	width: 100%;
+}
+
+hide-pannel-button {
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	border: 1px white ;
+	border-style: solid dashed;
+	border-radius: 5px;
+	color: white;
+	transition: background-color 0.3s ease;
+}
+
+hide-pannel-button:hover {
+	background-color: rgba(57, 101, 101, 0.842);
+}

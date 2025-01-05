@@ -457,3 +457,12 @@ document.addEventListener('DOMContentLoaded', function () {
 	  modalBandcampPlayer.style.display = 'none';
 	});
   });
+
+
+// hide-pannel script
+function hidepannelContent() {
+	const content = document.getElementById('hide-pannel-content');
+	const button = document.querySelector('hide-pannel-button');
+	content.classList.toggle('show');
+	button.textContent = content.classList.contains('show') ? 'Hide Content' : 'More Content';
+}
