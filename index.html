@@ -478,7 +478,7 @@
 					<div class="hide-pannel-button-container">
 						<div class="hide-pannel-button-line-container">
 							<div class="hide-pannel-button-line"></div>
-							<hide-pannel-button onclick="hidepannelContent()">More Content</hide-pannel-button>
+							<hide-pannel-button onclick="toggleHidePannel(this)">Voir plus</hide-pannel-button>
 							<div class="hide-pannel-button-line"></div>
 						</div>
 					</div>
@@ -802,24 +802,33 @@
 							d'une vieille maison inhabitée.</i>
 					</div>
 				</div>
-				</p>
-				<div class="iframe_container">
+				
+				<div class="hide-pannel-container">
+					<div class="hide-pannel-button-container">
+						<div class="hide-pannel-button-line-container">
+							<div class="hide-pannel-button-line"></div>
+							<hide-pannel-button onclick="toggleHidePannel(this)">Afficher le poster du film</hide-pannel-button>
+							<div class="hide-pannel-button-line"></div>
+						</div>
+					</div>
+					<div id="hide-pannel-content" class="hide-pannel-content">
+
+						<div class="iframe_container">
+							<img loading="lazy" style="width: 800px;" src="images/OMBR-Poster_final.png"
+								class="responsive image_border">
+						</div>
+
+					</div>
 				</div>
 
 				<hr>
 
-				<p>
-					<u>Bande-annonce du film, ce dernier sera disponible prochainement.</u>
-				</p>
+				<h4 class="film">Bande annonce</h4>
 				<div class="video-container">
 					<iframe title="vimeo-player" src="https://player.vimeo.com/video/982699012?h=ec92015b63"
 						frameborder="0" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 				</div>
-				<hr>
-				<div class="iframe_container">
-					<img loading="lazy" style="width: 100%;" src="images/OMBR-Poster_final.png"
-						class="responsive image_border">
-				</div>
+
 			</article>
 
 
@@ -883,24 +892,33 @@
 							Thomas Peyrounette</a></iframe>
 				</div>
 
+				<div class="hide-pannel-container">
+					<div class="hide-pannel-button-container">
+						<div class="hide-pannel-button-line-container">
+							<div class="hide-pannel-button-line"></div>
+							<hide-pannel-button onclick="toggleHidePannel(this)">Afficher le poster du film</hide-pannel-button>
+							<div class="hide-pannel-button-line"></div>
+						</div>
+					</div>
+					<div id="hide-pannel-content" class="hide-pannel-content">
+
+						<div class="iframe_container">
+							<img loading="lazy" style="width: 800px;" src="images/au 8e jour - poster final.jpg"
+								class="responsive image_border">
+						</div>
+
+					</div>
+				</div>
+
 				<hr>
 
-				<p>
-					<u>Bande-annonce du film, ce dernier sera disponible prochainement.</u>
-				</p>
-
+				<h4 class="film">Bande annonce</h4>
 				<div style="padding:41.88% 0 0 0;position:relative;"><iframe
 						src="https://player.vimeo.com/video/850726920?h=22ee0e54cb"
 						style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
 						allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
 				<script src="https://player.vimeo.com/api/player.js"></script>
 
-				<hr>
-
-				<div class="iframe_container">
-					<img loading="lazy" style="width: 100%;" src="images/au 8e jour - poster final.jpg"
-						class="responsive image_border">
-				</div>
 			</article>
 
 			<article id="awardsselectionsau8emejour">
@@ -908,384 +926,390 @@
 				<hr>
 				<div style="text-align: center;">
 					<img loading="lazy" src="images/au 8e jour - poster final.jpg" class="responsive image_border"
-						style="width: 300px;">
+						style="width: 500px;">
 				</div>
-				<hr>
-				<h4>48 Prix :</h4>
-				<!-- 48 + Turin -->
-				<ul>
-					<li><strong>Award of Best Original Soundtrack</strong> <br>
+
+				<hr style="width: 50%; margin: auto; margin-top: 20px; margin-bottom: 20px;">
+
+				<div style="text-align: center; justify-content: center;">
+					<h4><u>48 Prix :</u></h4>
+					<!-- 48 + Turin -->
+					<ul style="padding-top: 20px; padding-bottom: 30px;">
+						<strong>Award of Best Original Soundtrack</strong> <br>
 						Festival Off-Courts Trouville / Trouville / FRANCE
-					</li>
-				</ul>
-				<hr style="width: 50%; margin: 0 auto;">
-				<ul style="padding-top: 30px;">
-					<li><strong>Special Mention, Technical Achievement</strong> <br>
+					</ul>
+
+					<ul>
+						<strong>Special Mention, Technical Achievement</strong> <br>
 						Spark Animation / Vancouver, CANADA
-					</li>
-					<li><strong>Grand Prize of the International Competition</strong> <br>
+						<span class="spacer"></span>
+						<strong>Grand Prize of the International Competition</strong> <br>
 						International Creative Students Award / Osaka, JAPAN
-					</li>
-					<li><strong>Youth Jury Prize "conscientiousness"</strong> <br>
+						<span class="spacer"></span>
+						<strong>Youth Jury Prize "conscientiousness"</strong> <br>
 						Paris International Animation Film Festival / Paris, FRANCE
-					</li>
-					<li><strong>Jury Prize</strong> <br>
+						<span class="spacer"></span>
+						<strong>Jury Prize</strong> <br>
 						Festival Premiers Plans / Angers, FRANCE
-					</li>
-					<li><strong>Award for best animated short film</strong> <br>
+						<span class="spacer"></span>
+						<strong>Award for best animated short film</strong> <br>
 						Santa Barbara International Film Festival / Santa Barbara, UNITED STATES
-					</li>
-					<li><strong>Award of the town of Puy</strong> <br>
+						<span class="spacer"></span>
+						<strong>Award of the town of Puy</strong> <br>
 						Festival Court Mais Bon / Puy-en-Velay, FRANCE
-					</li>
-					<li><strong>Special Mention of Youth Jury</strong> <br>
+						<span class="spacer"></span>
+						<strong>Special Mention of Youth Jury</strong> <br>
 						MONSTRA Lisbon Animated Film Festival / Lisbon, PORTUGAL
-					</li>
-					<li><strong>Image Prize</strong> <br>
+						<span class="spacer"></span>
+						<strong>Image Prize</strong> <br>
 						Festival Les Regards de l'ICART / Paris, FRANCE
-					</li>
-					<li><strong>Best animated short film</strong> <br>
+						<span class="spacer"></span>
+						<strong>Best animated short film</strong> <br>
 						FESTIMATGE / Calella, SPAIN
-					</li>
-					<li><strong>Trickstar Nature Award</strong> <br>
+						<span class="spacer"></span>
+						<strong>Trickstar Nature Award</strong> <br>
 						Stuttgard International Festival of Animated Film / Stuttgard, GERMANY
-					</li>
-					<li><strong>Best animated movie</strong> <br>
+						<span class="spacer"></span>
+						<strong>Best animated movie</strong> <br>
 						TAYF International Short Film Festival / Istanbul, TÜRKIYE
-					</li>
-					<li><strong>Award of best short film</strong> <br>
+						<span class="spacer"></span>
+						<strong>Award of best short film</strong> <br>
 						Cactus International Children's and Youth Film Festival / Aoste, ITALY
-					</li>
-					<li><strong>Professional Jury Prize</strong> <br>
+						<span class="spacer"></span>
+						<strong>Professional Jury Prize</strong> <br>
 						Festival 1ère Marche / Troyes, FRANCE
-					</li>
-					<li><strong>Award of best short film</strong> <br>
+						<span class="spacer"></span>
+						<strong>Award of best short film</strong> <br>
 						Festival Internacional de Animación Caribetoons / Santa Marta, COLOMBIA
-					</li>
-					<li><strong>Special Mention</strong> <br>
+						<span class="spacer"></span>
+						<strong>Special Mention</strong> <br>
 						Kraków Film Festival / Kraków, POLAND
-					</li>
-					<li><strong>Jury Prize</strong> <br>
+						<span class="spacer"></span>
+						<strong>Jury Prize</strong> <br>
 						Court'Échelle / Paris, FRANCE
-					</li>
-					<li><strong>Award of "Promising Animated Short Film"</strong> <br>
+						<span class="spacer"></span>
+						<strong>Award of "Promising Animated Short Film"</strong> <br>
 						China International Cartoon & Animation Festival / Hagzhou, CHINA
-					</li>
-					<li><strong>Award of best animation short film</strong> <br>
+						<span class="spacer"></span>
+						<strong>Award of best animation short film</strong> <br>
 						Zlín Dog / Zlín, CZECH REPUBLIC
-					</li>
-					<li><strong>Jury Prize of Youth Competition</strong> <br>
+						<span class="spacer"></span>
+						<strong>Jury Prize of Youth Competition</strong> <br>
 						Animafest Zagreb 2024 / Zagreb, CROATIA
-					</li>
-					<li><strong>Student Jury Prize</strong> <br>
+						<span class="spacer"></span>
+						<strong>Student Jury Prize</strong> <br>
 						Festival du Film d'Animation / Savigny, SWITZERLAND
-					</li>
-					<li><strong>Young Creative Awards</strong> <br>
+						<span class="spacer"></span>
+						<strong>Young Creative Awards</strong> <br>
 						Deauville Green Awards / Deauville, FRANCE
-					</li>
-					<li><strong>Award of Best Animation short film</strong> <br>
+						<span class="spacer"></span>
+						<strong>Award of Best Animation short film</strong> <br>
 						Figari International Short Film Fest / Golfo Aranci, ITALY
-					</li>
-					<li><strong>Award of Best Film</strong> <br>
+						<span class="spacer"></span>
+						<strong>Award of Best Film</strong> <br>
 						Joinville International Film Festival / Joinville, BRAZIL
-					</li>
-					<li><strong>Award for Best Student Animated Short</strong> <br>
+						<span class="spacer"></span>
+						<strong>Award for Best Student Animated Short</strong> <br>
 						Palm Springs International ShortFest / Palm Springs / CALIFORNIA
-					</li>
-					<li><strong>Award of Best Animation short film</strong> <br>
+						<span class="spacer"></span>
+						<strong>Award of Best Animation short film</strong> <br>
 						Mundos Digitales International Animation Festival / Corogne / SPAIN
-					</li>
-					<li><strong>Voyager Award</strong> <br>
+						<span class="spacer"></span>
+						<strong>Voyager Award</strong> <br>
 						Open World Animation Festival / Emmaus, UNITED STATES (Pennsylvania)
-					</li>
-					<li><strong>CIMA Award of Best Filmmaker</strong> <br>
+						<span class="spacer"></span>
+						<strong>CIMA Award of Best Filmmaker</strong> <br>
 						Festival de Cine / Elche / SPAIN
-					</li>
-					<li><strong>Animation Special Mention</strong> <br>
+						<span class="spacer"></span>
+						<strong>Animation Special Mention</strong> <br>
 						Festival Internacional de Escuelas de Cine (FIEC) / Montevideo / URUGUAY
-					</li>
-					<li><strong>Competition Award Short and Green</strong> <br>
+						<span class="spacer"></span>
+						<strong>Competition Award Short and Green</strong> <br>
 						Drama International Short Film Festival / Dráma / GREECE
-					</li>
-					<li><strong>Student Film Special Mention</strong> <br>
+						<span class="spacer"></span>
+						<strong>Student Film Special Mention</strong> <br>
 						ANIMATOR FEST European Youth Festival of Animated Film / Jagodina / SERBIA
-					</li>
-					<li><strong>Best Student Storyline Film</strong> <br>
+						<span class="spacer"></span>
+						<strong>Best Student Storyline Film</strong> <br>
 						T-Short Animated Film Festival / Karlsruhe / GERMANY
-					</li>
-					<li><strong>Best Short Film (12-14 years old)</strong> <br>
+						<span class="spacer"></span>
+						<strong>Best Short Film (12-14 years old)</strong> <br>
 						Young Film Fest / Prague / CZECH REPUBLIC
-					</li>
-					<li><strong>Special Mention</strong> <br>
+						<span class="spacer"></span>
+						<strong>Special Mention</strong> <br>
 						Festival International Signes de Nuit / Paris / FRANCE
-					</li>
-					<li><strong>Best Animation Short Award</strong> <br>
+						<span class="spacer"></span>
+						<strong>Best Animation Short Award</strong> <br>
 						Innsbruck Nature Film Festival / Innsbruck / AUSTRIA
-					</li>
-					<li><strong>Youth Price</strong> <br>
+						<span class="spacer"></span>
+						<strong>Youth Price</strong> <br>
 						CineEco International Environmental Film Festival of Serra da Estreia / Seia / PORTUGAL
-					</li>
-					<li><strong>Best Animated Short</strong> <br>
+						<span class="spacer"></span>
+						<strong>Best Animated Short</strong> <br>
 						Bend Film Festival / Bend / UNITED STATES (Oregon)
-					</li>
-					<li><strong>Special Mention</strong> <br>
+						<span class="spacer"></span>
+						<strong>Special Mention</strong> <br>
 						CyBorg Film Festival / Valtiberina / ITALY
-					</li>
-					<li><strong>Best Student Film</strong> <br>
+						<span class="spacer"></span>
+						<strong>Best Student Film</strong> <br>
 						ReAnimania International Animation Film & Comics Art Festival / Erevan, ARMENIA
-					</li>
-					<li><strong>Special Mention</strong> <br>
+						<span class="spacer"></span>
+						<strong>Special Mention</strong> <br>
 						Arte Non Stop Festival / Buenos Aires, ARGENTINA
-					</li>
-					<li><strong>Special Mention</strong> <br>
+						<span class="spacer"></span>
+						<strong>Special Mention</strong> <br>
 						CONTACT International Student Film Festival / Izmir, TÜRKIYE
-					</li>
-					<li><strong>Best foreign film</strong> <br>
+						<span class="spacer"></span>
+						<strong>Best foreign film</strong> <br>
 						Early Bird International Student Film Festival / Sofia, BULGARIA
-					</li>
-					<li><strong>Public Prize</strong> <br>
+						<span class="spacer"></span>
+						<strong>Public Prize</strong> <br>
 						Pittsburgh Shorts & Script / Pittsburgh, UNNITED STATES
-					</li>
-					<li><strong>Best Environmental International short film</strong> <br>
+						<span class="spacer"></span>
+						<strong>Best Environmental International short film</strong> <br>
 						CINESTESIA FEST / Bogota, COLOMBIA
-					</li>
-					<li><strong>Nomination Award</strong> <br>
+						<span class="spacer"></span>
+						<strong>Nomination Award</strong> <br>
 						Xiamen International Animation Festival / XIamen, CHINA
-					</li>
-					<li><strong>Best International Student Short Film</strong> <br>
+						<span class="spacer"></span>
+						<strong>Best International Student Short Film</strong> <br>
 						CUTOUT FEST International Animation Festival / Querétaro, MEXICO
-					</li>
-					<li><strong>Award of best animation short film - popular jury prize</strong> <br>
+						<span class="spacer"></span>
+						<strong>Award of best animation short film - popular jury prize</strong> <br>
 						Festival Visioni Vericali / Potenza, ITALY
-					</li>
-					<li><strong>Best in show (1st Prize)</strong> <br>
+						<span class="spacer"></span>
+						<strong>Best in show (1st Prize)</strong> <br>
 						Sigraph Asia / Tokyo, JAPAN
-					</li>
-				</ul>
-				<hr>
-				<h4>220 Sélections :</h4>
-				<ul>
-					<li>SLASH Fantastic Film Festival / Vienna, AUSTRIA</li>
-					<li>Festival Voix d'Etoiles / Port Leucate, FRANCE</li>
-					<li>Spark Animation / Vancouver, CANADA</li>
-					<li>Ravenna Nightmare Film Festival / Ravenna, ITALY</li>
-					<li>International Student Film & Video Festival / Beijing, CHINA</li>
-					<li>Foyle Film Festival / Derry, NORTH IRELAND</li>
-					<li>Cour(t)s d'École #9 / Lille, FRANCE</li>
-					<li>Carrefour du cinéma d'animation / Paris, FRANCE</li>
-					<li>London International Animation Festival / London, ENGLAND</li>
-					<li>International Creative Students Award / Osaka, CANADA</li>
-					<li>Festival du Film d'Animation de Tournus / Tournus, FRANCE</li>
-					<li>Roshd Film Festival / Tehran, IRAN</li>
-					<li>Paris International Animation Film Festival / Paris, FRANCE</li>
-					<li>Flickerfest International Short Film Festival / Sydney, AUSTRALIA</li>
-					<li>Festival Premiers Plans / Angers, FRANCE</li>
-					<li>La Mida No Importa / Barcelona, SPAIN</li>
-					<li>27ème Festival du Court Métrage de Fréjus / Fréjus, FRANCE</li>
-					<li>Festival du Court Métrage de Clermont-Ferrand / Clermont-Ferrand, FRANCE</li>
-					<li>JEF Festival / Belgium, BELGIUM</li>
-					<li>Santa Barbara Internationnal Film Festival / Santa Barbara, UNITED STATES</li>
-					<li>Festival Court Mais Bon / Puy-en-Velay, FRANCE</li>
-					<li>ANIMAC International Animation Film Festival of Catalonia / Lleida, SPAIN</li>
-					<li>Festival MEME PAS PEUR de Saint-Philippe / Saint-Philippe, REUNION</li>
-					<li>VES Awards / Los Angeles, UNITED STATES</li>
-					<li>Anima / Brussels, BELGIUM</li>
-					<li>Fantasporto / Porto, PORTUGAL</li>
-					<li>Tehran International Animation Festival / Tehran, IRAN</li>
-					<li>Cinéma En famille de Québec (FCEQ) / Quebec, CANADA</li>
-					<li>IMAXINARIA International Animation Film Festival / La Coruña, SPAIN</li>
-					<li>MONSTRA Lisbon Animated Film Festival / Lisbon, PORTUGAL</li>
-					<li>Festival Les Regards de l'ICART / Paris, FRANCE</li>
-					<li>Tokyo Anime Award Festival / Tokyo, JAPAN</li>
-					<li>South by Southwest (SXSW) / Austin, UNITED STATES</li>
-					<li>Festival Courts en Champagne / Aÿ-Champagne, FRANCE</li>
-					<li>Rencontres du Cinéma Européen / Vannes, FRANCE</li>
-					<li>Festival REGARD / Saguenay, CANADA</li>
-					<li>Make Believe Seattle / Seattle, UNITED STATES</li>
-					<li>Festival Animation Dingle / Dingle, IRELAND</li>
-					<li>Festival Ciné-Jeune de l’Aisne / Aisne, FRANCE</li>
-					<li>Festival Tout Court / Gisors, FRANCE</li>
-					<li>Festival Courts-Bouillon / Rousset, FRANCE</li>
-					<li>Festival Les Clayes Du Cinéma / Clayes-sous-Bois, FRANCE</li>
-					<li>Happy Valley Animation Festival / Pennsylvania, UNITED STATES</li>
-					<li>Cleveland International Film Festival / Cleveland, UNITED STATES</li>
-					<li>International Grenzland-Filmtage / Selb, GERMANY</li>
-					<li>Ho Chi Minh City International Film Festival / Hô Chi Minh City, VIETNAM</li>
-					<li>Festival La Fila de Cortometrajes / Valladolid, SPAIN</li>
-					<li>Festival SHORTS / Offenbourg, GERMANY</li>
-					<li>Milwaukee Film Festival / Milwaukee, UNITED STATES</li>
-					<li>Florida Film Festival / Maitland, UNITED STATES</li>
-					<li>Festival National du Film d'Animation de Rennes / Rennes, FRANCE</li>
-					<li>FESTIMATGE / Calella, SPAIN</li>
-					<li>Corti Da Sogni International Short Film Festival / Ravenna, ITALY</li>
-					<li>Santiago del Estero Film Festival / Santiago del Estero, ARGENTINA</li>
-					<li>Festival Ça Cinéma de Valence / Valence, FRANCE</li>
-					<li>RiverRun International Film Festival / Winston-Salem, UNITED STATES</li>
-					<li>Georgetown University Film Festival (GUFF) / Washington, UNITED STATES</li>
-					<li>IESA Video Awards / Paris, FRANCE</li>
-					<li>Stuttgart International Festival of Animated Film / Stuttgard, GERMANY</li>
-					<li>Brussels Short Film Festival / Brussels, BELGIUM</li>
-					<li>Sehsüchte International Student Film Festival / Postdam, GERMANY</li>
-					<li>TAYF International Short Film Festival / Istanbul, TÜRKIYE</li>
-					<li>Oberhausen International Short Film Festival / Oberhausen, GERMANY</li>
-					<li>Cinema Talks Festival / Graz, AUSTRIA</li>
-					<li>Cactus International Children's and Youth Film Festival / Aoste, ITALY</li>
-					<li>Chicago Critics Film Festival / Chicago, UNITED STATES</li>
-					<li>Anifilm International Festival of Animated Films / Liberec, CZECH REPUBLIC</li>
-					<li>Student Cuts Film Festival / Ljutomer, SLOVENIA</li>
-					<li>Festival 1ère Marche / Troyes, FRANCE</li>
-					<li>Festival COURTIVORE / Mont-Saint-Aignan, FRANCE</li>
-					<li>Festival Internacional de Animación Caribetoons / Santa Marta, COLOMBIA</li>
-					<li>Festival Regain / Fos sur mer, FRANCE</li>
-					<li>Kraków Film Festival / Kraków, POLAND</li>
-					<li>Chilemonos International Animation Festival / Santiago, CHILE</li>
-					<li>Court’Échelle / Paris, FRANCE</li>
-					<li>China International Cartoon & Animation Festival / Hangzhou, CHINA</li>
-					<li>Zlín Dog / Zlín, CZECH REPUBLIC</li>
-					<li>Acid'Animé Contest / Paris, FRANCE</li>
-					<li>Caostica International Shortfilm & Videoclip Festival / Bilbao, SPAIN</li>
-					<li>Animafest Zagreb 2024 / Zagreb, CROATIA</li>
-					<li>Cinéma Français (la compétition "Jeunes Talents") / Aix-les-Bains, FRANCE</li>
-					<li>Festival du Film d'Animation / Savigny, SWITZERLAND</li>
-					<li>Festival National de Créativité Audiovisuelle (FNCA) / Cannes, FRANCE</li>
-					<li>Deauville Green Awards / Deauville, FRANCE</li>
-					<li>Figari International Short Film Fest / Golfo Aranci, ITALY</li>
-					<li>Joinville International Film Festival / Joinville, BRAZIL</li>
-					<li>Palm Springs International ShortFest / Palm Springs, CALIFORNIA</li>
-					<li>Festival Cinéma en Liberté / Toulon, FRANCE</li>
-					<li>Nevada City Film Festival (NCFF) / Nevada City, UNITED STATES</li>
-					<li>TERRAMIA Film Festival / Cervinara, ITALY</li>
-					<li>Nahal International Student Short Film Festival / Tehran, IRAN</li>
-					<li>FEST - New Directors | New Films Festival / Espinho, PORTUGAL</li>
-					<li>Festival du Film Court en Plein Air / Grenoble, FRANCE</li>
-					<li>Festival Cinema For Change / Paris, FRANCE</li>
-					<li>Mundos Digitales International Animation Festival / Corunna, SPAIN</li>
-					<li>Freedom Film Festival / Radom, POLAND</li>
-					<li>Galway Film Fleadh / Galway, IRELAND</li>
-					<li>Open World Animation Festival / Emmaus, UNITED STATES (Pennsylvania)</li>
-					<li>Animare Licata Animation Film Festival / Licata, SICILY</li>
-					<li>Festival de Cine / Elche, SPAIN</li>
-					<li>CARTOON CLUB International Festival of Animation Cinema / Rimini, ITALY</li>
-					<li>Insomnia International Open-Air Animation Film Festival / Kaluga, RUSSIA</li>
-					<li>Gran Paradiso Film Festival, Cogne, ITALY</li>
-					<li>Festival Phare / Arles, FRANCE</li>
-					<li>Cortocircuiti Short Film Festival / Bari, ITALY</li>
-					<li>Princeton Student Film Festival / Princeton, UNITED STATES</li>
-					<li>Festival Internacional de Cine Pequeño / Aspe, SPAIN</li>
-					<li>Festival Internacional de Cortometrajes Cine a la Calle / Barranquilla, COLOMBIA</li>
-					<li>Festival Internacional de Escuelas de Cine (FIEC) / Montevideo, URUGUAY</li>
-					<li>Filmambiente International Festival of Environmental Films / Rio de Janeiro, BRAZIL</li>
-					<li>Film Festival della Lessinia / Bosco Chiesanuova, ITALY</li>
-					<li>Festival du Film Francophone d'Angoulême (FFA) / Angoulême, FRANCE</li>
-					<li>China International New Media Short Film Festival / Shenzhen, CHINA</li>
-					<li>Maui Film Festival / Kahului, HAWAII</li>
-					<li>The Wild Fest / Vigo, SPAIN</li>
-					<li>Drama International Short Film Festival / Dráma, GREECE</li>
-					<li>ANIMATOR FEST European Youth Festival of Animated Film / Jagodina, SERBIA</li>
-					<li>Euganea Film Festival / Padoue, ITALY</li>
-					<li>Seoul International Children's Film Festival / Seoul, SOUTH KOREA</li>
-					<li>Festival Off-Courts Trouville / Trouville, FRANCE</li>
-					<li>Festival de Cine Estudiantil FENACIES / Montevideo, URUGUAY</li>
-					<li>World Festival of Animated Film / Varna, BULGARIA</li>
-					<li>T-Short Animated Film Festival / Karlsrihe, GERMANY</li>
-					<li>Nashville Film Festival / Nashville, UNITED STATES (Tennessee)</li>
-					<li>Chaniartoon - International Comic & Animation Festival / Chania, CRETE</li>
-					<li>Ningen Festival / Belgrade, SERBIA</li>
-					<li>Tirana International Film Festival / Tirana, ALBANIA</li>
-					<li>Festival Internacional de Imagem de Natureza / Vila Real, PORTUGAL</li>
-					<li>TrikFilm Festival / Ostrava, CZECH REPUBLIC</li>
-					<li>Charlotte Film Festival / Charlotte, UNITED STATES (North Carolina)</li>
-					<li>Young Film Fest / Prague, CZECH REPUBLIC</li>
-					<li>SCHLINGEL International Film Festival for Children and Young Audience / Chemnitz, GERMANY</li>
-					<li>Cordillera International Film Festival / Reno, UNITED STATES</li>
-					<li>Festival International du Film Francophone / Namur, BELGIUM</li>
-					<li>MANIFEST - Mafra Animation Film Festival / Eiriceira, PORTUGAL</li>
-					<li>BANG Awards - International Animation Film Festival / Torres Vedras, PORTUGAL</li>
-					<li>My first Abycine / Albacete, SPAIN</li>
-					<li>Science Film Festival / 20 countries (ASIA, AFRICA, MIDDLE EAST, LATIN AMERICA)</li>
-					<li>Balkanima European Animated Film Festival / Belgrade, SERBIA</li>
-					<li>Filmfest Sundsvall / Sundsvall, SWEDEN</li>
-					<li>Bolton International Film Festival / Bolton, ENGLAND</li>
-					<li>Festival Internacional de Cine de Ponferrada (FICP) / Ponferrada, SPAIN</li>
-					<li>Sedicicorto Forli International Film Festival / Forli, ITALY</li>
-					<li>Animest International Animation Film Festival / Bucharest, ROMANIA</li>
-					<li>Cinemira International Children's and Youth Film Festival / Budapest, HUNGARY</li>
-					<li>Festival International Signes de Nuit / Paris, FRANCE</li>
-					<li>Sharjah International Film Festival for Children & Youth / Sharjah, DUBAI</li>
-					<li>Biennial of Animation Bratislava / Bratislava, SLOVAKIA</li>
-					<li>Innsbruck Nature Film Festival / Innsbruck, AUSTRIA</li>
-					<li>CineEco International Environmental Film Festival of Serra da Estrela / Seia, PORTUGAL</li>
-					<li>Bend Film Festival / Bend, UNITED STATES (Oregon)</li>
-					<li>CyBorg Film Festival / Valtiberina, ITALY</li>
-					<li>Green Film Festival / Accra, GHANA</li>
-					<li>PROVINZIALE Filmfest Eberswalde / Eberswalde, GERMANY</li>
-					<li>Festival du Premier Court-Métrage / Pontault-Combault, FRANCE</li>
-					<li>ANIWOW! International Student Animation Festival / Pekin, CHINA</li>
-					<li>Festival de Saint-Paul-Trois-Châteaux / Saint-Paul-Trois-Châteaux, FRANCE</li>
-					<li>Primanima World Festival of First Animations / Budaörs, HUNGARY</li>
-					<li>Anima Cinefest / Hamilton, UNITED STATES (New York)</li>
-					<li>Boise International Short Film Festival / Boise, UNITED STATES (Idaho)</li>
-					<li>FILMETS Badalona Film Festival / Badalona, SPAIN</li>
-					<li>Taichung International Animation Festival / Taichung, TAIWAN</li>
-					<li>CORTOONS International Animation Film Festival / Gandia, SPAIN</li>
-					<li>TISFF / Téhéran, IRAN</li>
-					<li>Festival du Film d'Animation pour la Jeunesse / Bourg-en-Bresse, FRANCE</li>
-					<li>ReAnimania International Animation Film & Comics Art Festival / Erevan, ARMENIA</li>
-					<li>Filem'On International Film Festival for Young Audiences / Brussels, BELGIUM</li>
-					<li>Festival La Toile des Palmistes / Cayenne, FRENCH GUIANA</li>
-					<li>Big Cartoon Festival / Moscow, RUSSIA</li>
-					<li>BANJALUKA International Animated Film Festival / Banja Luka, BOSNIA HERZEGOVINA</li>
-					<li>Festival du cinéma international en Abitibi-Témiscamingue / Rouyn-Noranda, CANADA</li>
-					<li>Arte Non Stop Festival / Buenos Aires, ARGENTINA</li>
-					<li>BITBANG International Animation Festival / Buenos Aires, ARGENTINA</li>
-					<li>Festival Animacción / La Corogne, SPAIN</li>
-					<li>SILBERSALZ Science & Media Festival / Halle, GERMANY</li>
-					<li>CONTACT International Student Film Festival / Izmir, Türkiye</li>
-					<li>SUNCINE International Environmental Film Festival / Barcelona, SPAIN</li>
-					<li>Early Bird International Student Film Festival / Sofia, BULGARIA</li>
-					<li>Magma International Short Film Festival / Acireale, SICILY</li>
-					<li>Ojo de Pescado International Film Festival for Children and Youth / Valparaíso, CHILE</li>
-					<li>Coronado Island Film Festival / Coronado, UNITED STATES (California)</li>
-					<li>St. Louis International Film Festival / Saint Louis, UNITED STATES</li>
-					<li>Festival Ecran Libre / Aigues-Mortes, FRANCE</li>
-					<li>Grand Panorama - Films for Schools / Espinho, PORTUGAL</li>
-					<li>Certamen Internacional De Cortos Ciudad De Soria / Soria, SPAIN</li>
-					<li>Manchester Animation Festival / Manchester, ENGLAND</li>
-					<li>Festival Séquence Court-Métrage / Toulouse, FRANCE</li>
-					<li>Animex Festival / Middlesbrough, ENGLAND</li>
-					<li>Festival Européen du Film Court de Brest / Brest, FRANCE</li>
-					<li>Pittsburgh Shorts & Script / Pittsburgh, UNITED STATES</li>
-					<li>Ames International Children's Film Festival (Cinema Miúdo) / Ames, SPAIN</li>
-					<li>CINESTESIA FEST / Bogota, COLOMBIA</li>
-					<li>Festival de la Petite Ecole du Film Court / Vézelise and Nancy, FRANCE</li>
-					<li>IKUSKA International Short Film Festival / Trintxerpe, SPAIN</li>
-					<li>Festival Fenêtres sur Courts / Dijon, FRANCE</li>
-					<li>Warsaw Animation Film Festival / Varsovie, POLAND</li>
-					<li>Xiamen International Animation Festival / Xiamen, CHINA</li>
-					<li>CUTOUT FEST International Animation Festival / Querétaro, MEXICO</li>
-					<li>Festival Visioni Verticali / Potenza, ITALY</li>
-					<li>FIFAVA / Anglet, FRANCE</li>
-					<li>Festival du Cinéma Nature & Environnement (FCNE) / Grenoble, FRANCE</li>
-					<li>International Young Audience Film Festival Ale Kino / Poznań, POLAND</li>
-					<li>Festival Enkarzine / Zalla, SPAIN</li>
-					<li>Festival Via dei Corti / Gravina di Catania, ITALY</li>
-					<li>Poitiers Film Festival / Poitiers, FRANCE</li>
-					<li>Festival L'ILLUMINÉ / Montpellier, FRANCE</li>
-					<li>Kinoproba International Festival-Workshop of Film Schools / Iekaterinbourg, RUSSIA</li>
-					<li>Euroshorts International Film Festival / Gdańsk, POLAND</li>
-					<li>Sigraph Asia / Tokyo, JAPAN</li>
-					<li>MUMIA Underground World Animation Festival / Belo Horizonte, BRAZIL</li>
-					<li>ICONA Animation Festival / Corfou, GREECE</li>
-					<li>ANIMAKOM FEST / Bilbao, SPAIN</li>
-					<li>Golden Baklava Film Academy International Student Film Festival / Gaziantep, TÜRKIYE</li>
-					<li>Festival du Court-Métrage de Loubens-Lauragais / Loubens-Lauragais, FRANCE</li>
-					<li>Persistence of Vision Film Festival / Hot Springs, UNITED STATES</li>
-					<li>Festival COURTS MAIS TRASH / Bruxelles, BELGIUM</li>
-					<li>Kyoto International Student Film & Video Festival / Kyoto, JAPAN</li>
-					<li>Pirineos Mountain Film Festival (PMFF) / Huesca, SPAIN</li>
-					<li>American Conservation Film Festival / Shepherdstown, UNITED STATES</li>
-					<li>TINDIRINDIS International Animated Film Festival / Vilnius, LITHUANIA</li>
-				</ul>
+						<span class="spacer"></span>
+					</ul>
+
+					<hr style="width: 50%; margin: auto; margin-top: 20px; margin-bottom: 20px;">
+
+					<h4><u>220 Sélections :</u></h4>
+					<ul>
+						SLASH Fantastic Film Festival / Vienna, AUSTRIA<br>
+						Festival Voix d'Etoiles / Port Leucate, FRANCE<br>
+						Spark Animation / Vancouver, CANADA<br>
+						Ravenna Nightmare Film Festival / Ravenna, ITALY<br>
+						International Student Film & Video Festival / Beijing, CHINA<br>
+						Foyle Film Festival / Derry, NORTH IRELAND<br>
+						Cour(t)s d'École #9 / Lille, FRANCE<br>
+						Carrefour du cinéma d'animation / Paris, FRANCE<br>
+						London International Animation Festival / London, ENGLAND<br>
+						International Creative Students Award / Osaka, CANADA<br>
+						Festival du Film d'Animation de Tournus / Tournus, FRANCE<br>
+						Roshd Film Festival / Tehran, IRAN<br>
+						Paris International Animation Film Festival / Paris, FRANCE<br>
+						Flickerfest International Short Film Festival / Sydney, AUSTRALIA<br>
+						Festival Premiers Plans / Angers, FRANCE<br>
+						La Mida No Importa / Barcelona, SPAIN<br>
+						27ème Festival du Court Métrage de Fréjus / Fréjus, FRANCE<br>
+						Festival du Court Métrage de Clermont-Ferrand / Clermont-Ferrand, FRANCE<br>
+						JEF Festival / Belgium, BELGIUM<br>
+						Santa Barbara Internationnal Film Festival / Santa Barbara, UNITED STATES<br>
+						Festival Court Mais Bon / Puy-en-Velay, FRANCE<br>
+						ANIMAC International Animation Film Festival of Catalonia / Lleida, SPAIN<br>
+						Festival MEME PAS PEUR de Saint-Philippe / Saint-Philippe, REUNION<br>
+						VES Awards / Los Angeles, UNITED STATES<br>
+						Anima / Brussels, BELGIUM<br>
+						Fantasporto / Porto, PORTUGAL<br>
+						Tehran International Animation Festival / Tehran, IRAN<br>
+						Cinéma En famille de Québec (FCEQ) / Quebec, CANADA<br>
+						IMAXINARIA International Animation Film Festival / La Coruña, SPAIN<br>
+						MONSTRA Lisbon Animated Film Festival / Lisbon, PORTUGAL<br>
+						Festival Les Regards de l'ICART / Paris, FRANCE<br>
+						Tokyo Anime Award Festival / Tokyo, JAPAN<br>
+						South by Southwest (SXSW) / Austin, UNITED STATES<br>
+						Festival Courts en Champagne / Aÿ-Champagne, FRANCE<br>
+						Rencontres du Cinéma Européen / Vannes, FRANCE<br>
+						Festival REGARD / Saguenay, CANADA<br>
+						Make Believe Seattle / Seattle, UNITED STATES<br>
+						Festival Animation Dingle / Dingle, IRELAND<br>
+						Festival Ciné-Jeune de l’Aisne / Aisne, FRANCE<br>
+						Festival Tout Court / Gisors, FRANCE<br>
+						Festival Courts-Bouillon / Rousset, FRANCE<br>
+						Festival Les Clayes Du Cinéma / Clayes-sous-Bois, FRANCE<br>
+						Happy Valley Animation Festival / Pennsylvania, UNITED STATES<br>
+						Cleveland International Film Festival / Cleveland, UNITED STATES<br>
+						International Grenzland-Filmtage / Selb, GERMANY<br>
+						Ho Chi Minh City International Film Festival / Hô Chi Minh City, VIETNAM<br>
+						Festival La Fila de Cortometrajes / Valladolid, SPAIN<br>
+						Festival SHORTS / Offenbourg, GERMANY<br>
+						Milwaukee Film Festival / Milwaukee, UNITED STATES<br>
+						Florida Film Festival / Maitland, UNITED STATES<br>
+						Festival National du Film d'Animation de Rennes / Rennes, FRANCE<br>
+						FESTIMATGE / Calella, SPAIN<br>
+						Corti Da Sogni International Short Film Festival / Ravenna, ITALY<br>
+						Santiago del Estero Film Festival / Santiago del Estero, ARGENTINA<br>
+						Festival Ça Cinéma de Valence / Valence, FRANCE<br>
+						RiverRun International Film Festival / Winston-Salem, UNITED STATES<br>
+						Georgetown University Film Festival (GUFF) / Washington, UNITED STATES<br>
+						IESA Video Awards / Paris, FRANCE<br>
+						Stuttgart International Festival of Animated Film / Stuttgard, GERMANY<br>
+						Brussels Short Film Festival / Brussels, BELGIUM<br>
+						Sehsüchte International Student Film Festival / Postdam, GERMANY<br>
+						TAYF International Short Film Festival / Istanbul, TÜRKIYE<br>
+						Oberhausen International Short Film Festival / Oberhausen, GERMANY<br>
+						Cinema Talks Festival / Graz, AUSTRIA<br>
+						Cactus International Children's and Youth Film Festival / Aoste, ITALY<br>
+						Chicago Critics Film Festival / Chicago, UNITED STATES<br>
+						Anifilm International Festival of Animated Films / Liberec, CZECH REPUBLIC<br>
+						Student Cuts Film Festival / Ljutomer, SLOVENIA<br>
+						Festival 1ère Marche / Troyes, FRANCE<br>
+						Festival COURTIVORE / Mont-Saint-Aignan, FRANCE<br>
+						Festival Internacional de Animación Caribetoons / Santa Marta, COLOMBIA<br>
+						Festival Regain / Fos sur mer, FRANCE<br>
+						Kraków Film Festival / Kraków, POLAND<br>
+						Chilemonos International Animation Festival / Santiago, CHILE<br>
+						Court’Échelle / Paris, FRANCE<br>
+						China International Cartoon & Animation Festival / Hangzhou, CHINA<br>
+						Zlín Dog / Zlín, CZECH REPUBLIC<br>
+						Acid'Animé Contest / Paris, FRANCE<br>
+						Caostica International Shortfilm & Videoclip Festival / Bilbao, SPAIN<br>
+						Animafest Zagreb 2024 / Zagreb, CROATIA<br>
+						Cinéma Français (la compétition "Jeunes Talents") / Aix-les-Bains, FRANCE<br>
+						Festival du Film d'Animation / Savigny, SWITZERLAND<br>
+						Festival National de Créativité Audiovisuelle (FNCA) / Cannes, FRANCE<br>
+						Deauville Green Awards / Deauville, FRANCE<br>
+						Figari International Short Film Fest / Golfo Aranci, ITALY<br>
+						Joinville International Film Festival / Joinville, BRAZIL<br>
+						Palm Springs International ShortFest / Palm Springs, CALIFORNIA<br>
+						Festival Cinéma en Liberté / Toulon, FRANCE<br>
+						Nevada City Film Festival (NCFF) / Nevada City, UNITED STATES<br>
+						TERRAMIA Film Festival / Cervinara, ITALY<br>
+						Nahal International Student Short Film Festival / Tehran, IRAN<br>
+						FEST - New Directors | New Films Festival / Espinho, PORTUGAL<br>
+						Festival du Film Court en Plein Air / Grenoble, FRANCE<br>
+						Festival Cinema For Change / Paris, FRANCE<br>
+						Mundos Digitales International Animation Festival / Corunna, SPAIN<br>
+						Freedom Film Festival / Radom, POLAND<br>
+						Galway Film Fleadh / Galway, IRELAND<br>
+						Open World Animation Festival / Emmaus, UNITED STATES (Pennsylvania)<br>
+						Animare Licata Animation Film Festival / Licata, SICILY<br>
+						Festival de Cine / Elche, SPAIN<br>
+						CARTOON CLUB International Festival of Animation Cinema / Rimini, ITALY<br>
+						Insomnia International Open-Air Animation Film Festival / Kaluga, RUSSIA<br>
+						Gran Paradiso Film Festival, Cogne, ITALY<br>
+						Festival Phare / Arles, FRANCE<br>
+						Cortocircuiti Short Film Festival / Bari, ITALY<br>
+						Princeton Student Film Festival / Princeton, UNITED STATES<br>
+						Festival Internacional de Cine Pequeño / Aspe, SPAIN<br>
+						Festival Internacional de Cortometrajes Cine a la Calle / Barranquilla, COLOMBIA<br>
+						Festival Internacional de Escuelas de Cine (FIEC) / Montevideo, URUGUAY<br>
+						Filmambiente International Festival of Environmental Films / Rio de Janeiro, BRAZIL<br>
+						Film Festival della Lessinia / Bosco Chiesanuova, ITALY<br>
+						Festival du Film Francophone d'Angoulême (FFA) / Angoulême, FRANCE<br>
+						China International New Media Short Film Festival / Shenzhen, CHINA<br>
+						Maui Film Festival / Kahului, HAWAII<br>
+						The Wild Fest / Vigo, SPAIN<br>
+						Drama International Short Film Festival / Dráma, GREECE<br>
+						ANIMATOR FEST European Youth Festival of Animated Film / Jagodina, SERBIA<br>
+						Euganea Film Festival / Padoue, ITALY<br>
+						Seoul International Children's Film Festival / Seoul, SOUTH KOREA<br>
+						Festival Off-Courts Trouville / Trouville, FRANCE<br>
+						Festival de Cine Estudiantil FENACIES / Montevideo, URUGUAY<br>
+						World Festival of Animated Film / Varna, BULGARIA<br>
+						T-Short Animated Film Festival / Karlsrihe, GERMANY<br>
+						Nashville Film Festival / Nashville, UNITED STATES (Tennessee)<br>
+						Chaniartoon - International Comic & Animation Festival / Chania, CRETE<br>
+						Ningen Festival / Belgrade, SERBIA<br>
+						Tirana International Film Festival / Tirana, ALBANIA<br>
+						Festival Internacional de Imagem de Natureza / Vila Real, PORTUGAL<br>
+						TrikFilm Festival / Ostrava, CZECH REPUBLIC<br>
+						Charlotte Film Festival / Charlotte, UNITED STATES (North Carolina)<br>
+						Young Film Fest / Prague, CZECH REPUBLIC<br>
+						SCHLINGEL International Film Festival for Children and Young Audience / Chemnitz, GERMANY
+						<br>
+						Cordillera International Film Festival / Reno, UNITED STATES<br>
+						Festival International du Film Francophone / Namur, BELGIUM<br>
+						MANIFEST - Mafra Animation Film Festival / Eiriceira, PORTUGAL<br>
+						BANG Awards - International Animation Film Festival / Torres Vedras, PORTUGAL<br>
+						My first Abycine / Albacete, SPAIN<br>
+						Science Film Festival / 20 countries (ASIA, AFRICA, MIDDLE EAST, LATIN AMERICA)<br>
+						Balkanima European Animated Film Festival / Belgrade, SERBIA<br>
+						Filmfest Sundsvall / Sundsvall, SWEDEN<br>
+						Bolton International Film Festival / Bolton, ENGLAND<br>
+						Festival Internacional de Cine de Ponferrada (FICP) / Ponferrada, SPAIN<br>
+						Sedicicorto Forli International Film Festival / Forli, ITALY<br>
+						Animest International Animation Film Festival / Bucharest, ROMANIA<br>
+						Cinemira International Children's and Youth Film Festival / Budapest, HUNGARY<br>
+						Festival International Signes de Nuit / Paris, FRANCE<br>
+						Sharjah International Film Festival for Children & Youth / Sharjah, DUBAI<br>
+						Biennial of Animation Bratislava / Bratislava, SLOVAKIA<br>
+						Innsbruck Nature Film Festival / Innsbruck, AUSTRIA<br>
+						CineEco International Environmental Film Festival of Serra da Estrela / Seia, PORTUGAL<br>
+						Bend Film Festival / Bend, UNITED STATES (Oregon)<br>
+						CyBorg Film Festival / Valtiberina, ITALY<br>
+						Green Film Festival / Accra, GHANA<br>
+						PROVINZIALE Filmfest Eberswalde / Eberswalde, GERMANY<br>
+						Festival du Premier Court-Métrage / Pontault-Combault, FRANCE<br>
+						ANIWOW! International Student Animation Festival / Pekin, CHINA<br>
+						Festival de Saint-Paul-Trois-Châteaux / Saint-Paul-Trois-Châteaux, FRANCE<br>
+						Primanima World Festival of First Animations / Budaörs, HUNGARY<br>
+						Anima Cinefest / Hamilton, UNITED STATES (New York)<br>
+						Boise International Short Film Festival / Boise, UNITED STATES (Idaho)<br>
+						FILMETS Badalona Film Festival / Badalona, SPAIN<br>
+						Taichung International Animation Festival / Taichung, TAIWAN<br>
+						CORTOONS International Animation Film Festival / Gandia, SPAIN<br>
+						TISFF / Téhéran, IRAN<br>
+						Festival du Film d'Animation pour la Jeunesse / Bourg-en-Bresse, FRANCE<br>
+						ReAnimania International Animation Film & Comics Art Festival / Erevan, ARMENIA<br>
+						Filem'On International Film Festival for Young Audiences / Brussels, BELGIUM<br>
+						Festival La Toile des Palmistes / Cayenne, FRENCH GUIANA<br>
+						Big Cartoon Festival / Moscow, RUSSIA<br>
+						BANJALUKA International Animated Film Festival / Banja Luka, BOSNIA HERZEGOVINA<br>
+						Festival du cinéma international en Abitibi-Témiscamingue / Rouyn-Noranda, CANADA<br>
+						Arte Non Stop Festival / Buenos Aires, ARGENTINA<br>
+						BITBANG International Animation Festival / Buenos Aires, ARGENTINA<br>
+						Festival Animacción / La Corogne, SPAIN<br>
+						SILBERSALZ Science & Media Festival / Halle, GERMANY<br>
+						CONTACT International Student Film Festival / Izmir, Türkiye<br>
+						SUNCINE International Environmental Film Festival / Barcelona, SPAIN<br>
+						Early Bird International Student Film Festival / Sofia, BULGARIA<br>
+						Magma International Short Film Festival / Acireale, SICILY<br>
+						Ojo de Pescado International Film Festival for Children and Youth / Valparaíso, CHILE<br>
+						Coronado Island Film Festival / Coronado, UNITED STATES (California)<br>
+						St. Louis International Film Festival / Saint Louis, UNITED STATES<br>
+						Festival Ecran Libre / Aigues-Mortes, FRANCE<br>
+						Grand Panorama - Films for Schools / Espinho, PORTUGAL<br>
+						Certamen Internacional De Cortos Ciudad De Soria / Soria, SPAIN<br>
+						Manchester Animation Festival / Manchester, ENGLAND<br>
+						Festival Séquence Court-Métrage / Toulouse, FRANCE<br>
+						Animex Festival / Middlesbrough, ENGLAND<br>
+						Festival Européen du Film Court de Brest / Brest, FRANCE<br>
+						Pittsburgh Shorts & Script / Pittsburgh, UNITED STATES<br>
+						Ames International Children's Film Festival (Cinema Miúdo) / Ames, SPAIN<br>
+						CINESTESIA FEST / Bogota, COLOMBIA<br>
+						Festival de la Petite Ecole du Film Court / Vézelise and Nancy, FRANCE<br>
+						IKUSKA International Short Film Festival / Trintxerpe, SPAIN<br>
+						Festival Fenêtres sur Courts / Dijon, FRANCE<br>
+						Warsaw Animation Film Festival / Varsovie, POLAND<br>
+						Xiamen International Animation Festival / Xiamen, CHINA<br>
+						CUTOUT FEST International Animation Festival / Querétaro, MEXICO<br>
+						Festival Visioni Verticali / Potenza, ITALY<br>
+						FIFAVA / Anglet, FRANCE<br>
+						Festival du Cinéma Nature & Environnement (FCNE) / Grenoble, FRANCE<br>
+						International Young Audience Film Festival Ale Kino / Poznań, POLAND<br>
+						Festival Enkarzine / Zalla, SPAIN<br>
+						Festival Via dei Corti / Gravina di Catania, ITALY<br>
+						Poitiers Film Festival / Poitiers, FRANCE<br>
+						Festival L'ILLUMINÉ / Montpellier, FRANCE<br>
+						Kinoproba International Festival-Workshop of Film Schools / Iekaterinbourg, RUSSIA<br>
+						Euroshorts International Film Festival / Gdańsk, POLAND<br>
+						Sigraph Asia / Tokyo, JAPAN<br>
+						MUMIA Underground World Animation Festival / Belo Horizonte, BRAZIL<br>
+						ICONA Animation Festival / Corfou, GREECE<br>
+						ANIMAKOM FEST / Bilbao, SPAIN<br>
+						Golden Baklava Film Academy International Student Film Festival / Gaziantep, TÜRKIYE<br>
+						Festival du Court-Métrage de Loubens-Lauragais / Loubens-Lauragais, FRANCE<br>
+						Persistence of Vision Film Festival / Hot Springs, UNITED STATES<br>
+						Festival COURTS MAIS TRASH / Bruxelles, BELGIUM<br>
+						Kyoto International Student Film & Video Festival / Kyoto, JAPAN<br>
+						Pirineos Mountain Film Festival (PMFF) / Huesca, SPAIN<br>
+						American Conservation Film Festival / Shepherdstown, UNITED STATES<br>
+						TINDIRINDIS International Animated Film Festival / Vilnius, LITHUANIA<br>
+					</ul>
+				</div>
 
 			</article>
 
@@ -1317,9 +1341,8 @@
 
 				<hr>
 
-				<p>
-					<u>Bande-annonce du film, ce dernier sera disponible prochainement.</u>
-				</p>
+				<h4 class="film">Bande annonce</h4>
+
 				<div style="padding:56.25% 0 0 0;position:relative;"><iframe
 						src="https://player.vimeo.com/video/850724010?h=b99f62e0db"
 						style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
@@ -1352,15 +1375,34 @@
 							Thomas Peyrounette</a></iframe>
 				</div>
 
+				<div class="hide-pannel-container">
+					<div class="hide-pannel-button-container">
+						<div class="hide-pannel-button-line-container">
+							<div class="hide-pannel-button-line"></div>
+							<hide-pannel-button onclick="toggleHidePannel(this)">Afficher le poster du film</hide-pannel-button>
+							<div class="hide-pannel-button-line"></div>
+						</div>
+					</div>
+					<div id="hide-pannel-content" class="hide-pannel-content">
+
+						<div style="text-align: center;">
+							<img loading="lazy" src="images/A bicyclette - poster final-min.png" class="responsive image_border"
+								style="width: 800px;">
+						</div>
+
+					</div>
+				</div>
+
 				<hr>
+
+				<h4 class="film">Le Film</h4>
 
 				<div style="padding:56.25% 0 0 0;position:relative;"><iframe
 						src="https://player.vimeo.com/video/905268809?h=6e7ccf2084"
 						style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
 						allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
 				<script src="https://player.vimeo.com/api/player.js"></script>
-				<hr>
-				<img loading="lazy" src="images/A bicyclette - poster final-min.png" class="responsive image_border">
+
 			</article>
 
 			<article id="awardsselectionsabicyclette">
@@ -1500,13 +1542,16 @@
 					</div>
 				</div>
 				</p>
-				<p>
+
+				<hr>
+
+				<h4 class="film">Le film</h4>
+
 				<div class="video-container"><iframe loading="lazy"
 						data-src="https://www.youtube-nocookie.com/embed/9UQOB5Jgl2I" title="YouTube video player"
 						frameborder="0"
 						allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe></div>
-				</p>
 			</article>
 
 			<!-- Le chêne et le roseau-->
@@ -1525,6 +1570,9 @@
 							Et Le Roseau by Thomas Peyrounette</a></iframe>
 				</div>
 				<hr>
+
+				<h4 class="film">Le film</h4>
+
 				<div class="video-container"><iframe loading="lazy"
 						data-src="https://www.youtube-nocookie.com/embed/cFIdBjIj7F8" title="YouTube video player"
 						frameborder="0"
@@ -1552,6 +1600,9 @@
 							Peyrounette</a></iframe>
 				</div>
 				<hr>
+
+				<h4 class="film">Le film</h4>
+
 				<div class="video-container"><iframe loading="lazy"
 						data-src="https://www.youtube-nocookie.com/embed/CmYU3SkUyXQ" title="YouTube video player"
 						frameborder="0"
@@ -1579,7 +1630,11 @@
 						seamless><a href="https://thomaspeyrounette.bandcamp.com/album/mot-na">Motùna by Thomas
 							Peyrounette</a></iframe>
 				</div>
+
 				<hr>
+
+				<h4 class="film">Le film</h4>
+
 				<div class="video-container"><iframe loading="lazy"
 						data-src="https://www.youtube-nocookie.com/embed/ODEcdHxm05U" title="YouTube video player"
 						frameborder="0"
@@ -1606,7 +1661,11 @@
 						seamless><a href="https://thomaspeyrounette.bandcamp.com/album/les-ailes-de-tota">Les Ailes De
 							Tota by Thomas Peyrounette</a></iframe>
 				</div>
+
 				<hr>
+
+				<h4 class="film">Le film</h4>
+
 				<div class="video-container"><iframe loading="lazy"
 						data-src="https://www.youtube-nocookie.com/embed/tn2p9aTLShU" title="YouTube video player"
 						frameborder="0"
@@ -1633,7 +1692,11 @@
 						seamless><a href="https://thomaspeyrounette.bandcamp.com/album/avec-le-temps">Avec Le Temps by
 							Thomas Peyrounette</a></iframe>
 				</div>
+
 				<hr>
+
+				<h4 class="film">Le film</h4>
+
 				<div class="video-container"><iframe loading="lazy" data-src="https://www.youtube.com/embed/CidczYXtQOE"
 						title="YouTube video player" frameborder="0"
 						allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1663,7 +1726,11 @@
 						seamless><a href="https://thomaspeyrounette.bandcamp.com/album/chlorophylle">Chlorophylle by
 							Thomas Peyrounette</a></iframe>
 				</div>
+
 				<hr>
+
+				<h4 class="film">Le film</h4>
+
 				<div class="video-container"><iframe loading="lazy"
 						data-src="https://www.youtube-nocookie.com/embed/zwGSgqzkCwQ" title="YouTube video player"
 						frameborder="0"
@@ -1690,7 +1757,11 @@
 						seamless><a href="https://thomaspeyrounette.bandcamp.com/album/coffee-break">Coffee Break by
 							Thomas Peyrounette</a></iframe>
 				</div>
+
 				<hr>
+
+				<h4 class="film">Le film</h4>
+
 				<div class="video-container"><iframe loading="lazy"
 						data-src="https://www.youtube-nocookie.com/embed/_eXiVx1qfS4" title="YouTube video player"
 						frameborder="0"
@@ -1717,6 +1788,11 @@
 					</div>
 				</div>
 				</p>
+
+				<hr>
+
+				<h4 class="film">Le film</h4>
+
 				<p>
 				<div class="video-container"><iframe loading="lazy"
 						data-src="https://www.youtube-nocookie.com/embed/W-gnh5WYe5g" title="YouTube video player"
@@ -1731,13 +1807,17 @@
 				<h3>Exercice à l'image - Ratatouille (2020)</h3>
 				<p>Exercice de composition à l'image durant ma première année du cursus au CRR d'Annecy.</p>
 				<p><i>Scène de course poursuite dans un film d'animation.</i></p>
-				<p>
+
+				<hr>
+
+				<h4 class="film">Le film</h4>
+
 				<div class="video-container"><iframe loading="lazy"
 						data-src="https://www.youtube-nocookie.com/embed/wkjbXk1PKNk" title="YouTube video player"
 						frameborder="0"
 						allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe></div>
-				</p>
+
 			</article>
 
 			<!-- Monstres & Cie -->
@@ -1746,13 +1826,16 @@
 				<p>Exercice à l'image pour le concours d'entrée de la classe de composition à l'image d'Annecy en juin
 					(2020).</p>
 				<p><i>Extrait de Monstres & Cie.</i></p>
-				<p>
+
+				<hr>
+
+				<h4 class="film">Le film</h4>
+
 				<div class="video-container"><iframe loading="lazy"
 						data-src="https://www.youtube-nocookie.com/embed/6FdiU8ADlKo" title="YouTube video player"
 						frameborder="0"
 						allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe></div>
-				</p>
 			</article>
 
 
@@ -1816,7 +1899,11 @@
 						seamless><a href="https://thomaspeyrounette.bandcamp.com/album/take-a-shot">Take A Shot by
 							Thomas Peyrounette</a></iframe>
 				</div>
+
 				<hr>
+
+				<h4 class="film">Gameplay</h4>
+
 				<div class="video-container"><iframe loading="lazy"
 						data-src="https://www.youtube-nocookie.com/embed/9ElXA5GEI1g" title="YouTube video player"
 						frameborder="0"
@@ -1869,7 +1956,11 @@
 						seamless><a href="https://thomaspeyrounette.bandcamp.com/album/the-epopee-of-hylas">The Epopee
 							of Hylas by Thomas Peyrounette</a></iframe>
 				</div>
+
 				<hr>
+
+				<h4 class="film">Bande annonce</h4>
+
 				<div class="video-container"><iframe loading="lazy"
 						data-src="https://www.youtube-nocookie.com/embed/LkZiIgAkPpE" title="YouTube video player"
 						frameborder="0"
@@ -2006,7 +2097,26 @@
 							Familiale Ancestrale à Invoquer en Cas de Conflit Majeur by Thomas Peyrounette</a></iframe>
 				</div>
 
+				<div class="hide-pannel-container">
+					<div class="hide-pannel-button-container">
+						<div class="hide-pannel-button-line-container">
+							<div class="hide-pannel-button-line"></div>
+							<hide-pannel-button onclick="toggleHidePannel(this)">Afficher le poster du film</hide-pannel-button>
+							<div class="hide-pannel-button-line"></div>
+						</div>
+					</div>
+					<div id="hide-pannel-content" class="hide-pannel-content">
+
+						<div class="iframe_container">
+							<img loading="lazy" style="width: 800px;" src="images/tfaiccm.jpg" class="responsive image_border">
+						</div>
+
+					</div>
+				</div>
+
 				<hr>
+
+				<h4 class="film">Le film</h4>
 
 				<div class="video-container"><iframe loading="lazy"
 						data-src="https://www.youtube-nocookie.com/embed/u-kCDgtpN3I" title="YouTube video player"
@@ -2014,21 +2124,16 @@
 						allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe></div>
 
-				<hr>
-
-				<div class="iframe_container">
-					<img loading="lazy" style="width: 100%;" src="images/tfaiccm.jpg" class="responsive image_border">
-				</div>
 			</article>
 
 			<article id="tfaiccm_casting">
 				<h3>Tradition Familiale Ancestrale à Invoquer en Cas de Conflit Majeur</h3>
 				<hr>
 				<div style="text-align: center;">
-					<img loading="lazy" src="images/tfaiccm.jpg" class="responsive image_border" style="width: 300px;">
+					<img loading="lazy" src="images/tfaiccm.jpg" class="responsive image_border" style="width: 500px;">
 				</div>
 
-				<hr>
+				<hr style="width: 50%; margin: auto; margin-top: 20px; margin-bottom: 20px;">
 
 				<div style="text-align: center;">
 					<h4><u>Casting :</u></h4>
@@ -2154,7 +2259,11 @@
 						seamless><a href="https://thomaspeyrounette.bandcamp.com/album/unvernunft">UnVernunft by Thomas
 							Peyrounette</a></iframe>
 				</div>
+
 				<hr>
+
+				<h4 class="film">Le film</h4>
+
 				<div class="video-container"><iframe loading="lazy"
 						data-src="https://www.youtube-nocookie.com/embed/FXyXx_llAYc" title="YouTube video player"
 						frameborder="0"
@@ -2177,7 +2286,11 @@
 						seamless><a href="https://thomaspeyrounette.bandcamp.com/album/mall">Mall by Thomas
 							Peyrounette</a></iframe>
 				</div>
+
 				<hr>
+
+				<h4 class="film">Le film</h4>
+
 				<div class="video-container"><iframe loading="lazy"
 						data-src="https://www.youtube-nocookie.com/embed/xR2z1ABLe1U" title="YouTube video player"
 						frameborder="0"
@@ -2211,7 +2324,11 @@
 						seamless><a href="https://thomaspeyrounette.bandcamp.com/album/mon-point-dans-ta-gueule">Mon
 							Point Dans Ta Gueule by Lucas Beaugas &amp; Thomas Peyrounette</a></iframe>
 				</div>
+
 				<hr>
+
+				<h4 class="film">Le film</h4>
+
 				<div class="video-container"><iframe loading="lazy"
 						data-src="https://www.youtube-nocookie.com/embed/eWY4W04G2Xs" title="YouTube video player"
 						frameborder="0"
@@ -2224,13 +2341,16 @@
 				<h3>Exercice à l'image - Monsieur & Madame Adelman (2020)</h3>
 				<p>Exercice de composition à l'image durant ma première année du cursus au CRR d'Annecy.</p>
 				<p><i>Scène dramatique extraite du film Monsieur & Madame Adelman.</i></p>
-				<p>
+
+				<hr>
+
+				<h4 class="film">Le film</h4>
+
 				<div class="video-container"><iframe loading="lazy"
 						data-src="https://www.youtube-nocookie.com/embed/aYjcsfjr3JE" title="YouTube video player"
 						frameborder="0"
 						allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe></div>
-				</p>
 			</article>
 
 			<!-- Star Wars -->
@@ -2238,13 +2358,16 @@
 				<h3>Exercice à l'image - Star Wars (2020)</h3>
 				<p>Exercice de composition à l'image durant ma première année du cursus au CRR d'Annecy.</p>
 				<p><i>Scène de course poursuite dans un film d'action.</i></p>
-				<p>
+
+				<hr>
+
+				<h4 class="film">Le film</h4>
+
 				<div class="video-container"><iframe loading="lazy"
 						data-src="https://www.youtube-nocookie.com/embed/9Rugc5UeZCw" title="YouTube video player"
 						frameborder="0"
 						allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe></div>
-				</p>
 			</article>
 
 			<!-- Eye of the storm -->
@@ -2378,6 +2501,8 @@
 
 				<hr>
 
+				<h4 class="film">Le documentaire</h4>
+
 				<div class="video-container"><iframe loading="lazy"
 						data-src="https://www.youtube.com/embed/Da3HMSCRTYA?si=aSj-_yjXZSx1Uwvd"
 						title="YouTube video player" frameborder="0"
@@ -2411,6 +2536,8 @@
 				</div>
 
 				<hr>
+
+				<h4 class="film">Le documentaire</h4>
 
 				<div class="video-container"><iframe loading="lazy"
 						data-src="https://www.youtube.com/embed/1jlxppgVAEM?si=WVOSDju2Y8BTT1tr"
@@ -2471,7 +2598,11 @@
 						seamless><a href="https://thomaspeyrounette.bandcamp.com/album/lart-de-voir-autrement">L&#39;art
 							de voir autrement by Thomas Peyrounette</a></iframe>
 				</div>
+
 				<hr>
+
+				<h4 class="film">Le documentaire</h4>
+
 				<div class="video-container"><iframe loading="lazy"
 						data-src="https://www.youtube-nocookie.com/embed/AoqcEMGfI6s" title="YouTube video player"
 						frameborder="0"
@@ -2526,19 +2657,31 @@
 							href="https://thomaspeyrounette.bandcamp.com/album/la-fl-che-saint-michel-interviews">La
 							Flèche Saint-Michel - Interviews by Thomas Peyrounette</a></iframe>
 				</div>
+
 				<hr>
+
+				<h4 class="film">Interview 1</h4>
+
 				<div class="video-container"><iframe loading="lazy"
 						data-src="https://www.youtube-nocookie.com/embed/ZsO4SCeZ0lI" title="YouTube video player"
 						frameborder="0"
 						allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe></div>
+
 				<hr>
+
+				<h4 class="film">Interview 2</h4>
+
 				<div class="video-container"><iframe loading="lazy"
 						data-src="https://www.youtube-nocookie.com/embed/dC1lMhcr2w0" title="YouTube video player"
 						frameborder="0"
 						allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe></div>
+
 				<hr>
+
+				<h4 class="film">Interview 3</h4>
+
 				<div class="video-container"><iframe loading="lazy"
 						data-src="https://www.youtube-nocookie.com/embed/3TkWsa9dYp4" title="YouTube video player"
 						frameborder="0"

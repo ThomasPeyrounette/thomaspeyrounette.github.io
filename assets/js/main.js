@@ -460,9 +460,33 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // hide-pannel script
-function hidepannelContent() {
-	const content = document.getElementById('hide-pannel-content');
-	const button = document.querySelector('hide-pannel-button');
+function toggleHidePannel(button) {
+	// Trouver le contenu du panneau dans le même conteneur que le bouton
+	const content = button.closest('.hide-pannel-container').querySelector('.hide-pannel-content');
+	
+	// Bascule la classe "show" pour afficher ou masquer le contenu
 	content.classList.toggle('show');
-	button.textContent = content.classList.contains('show') ? 'Hide Content' : 'More Content';
-}
+	
+	// Récupérer le texte initial du bouton en utilisant un attribut data
+	const initialText = button.getAttribute('data-initial-text');
+	
+	// Récupérer le texte actuel du bouton
+	const currentText = button.textContent.trim();
+	
+	// Met à jour le texte du bouton en fonction de l'état du panneau
+	if (content.classList.contains('show')) {
+	  // Si le contenu est affiché, mettre le texte à "Masquer"
+	  button.textContent = 'Masquer';
+	} else {
+	  // Si le contenu est masqué, remettre le texte au texte initial
+	  button.textContent = initialText;
+	}
+  }
+  
+  // À l'initialisation de la page, ajouter l'attribut data-initial-text à chaque hide-pannel-button
+  document.querySelectorAll('hide-pannel-button').forEach(button => {
+	if (!button.hasAttribute('data-initial-text')) {
+	  button.setAttribute('data-initial-text', button.textContent.trim());
+	}
+  });
+  
