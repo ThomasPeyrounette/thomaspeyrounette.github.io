@@ -1426,6 +1426,7 @@ body.is-preload #bg:before {
 	transition: opacity 0.325s ease-in-out;
 	position: relative;
 	margin-top: 3.5rem;
+	margin-bottom: 0;
 }
 
 #header>*:before {
@@ -1541,7 +1542,6 @@ body.is-preload #bg:before {
 	left: calc(50% - 1px);
 	width: 1px;
 	height: 100%;
-	background: #ffffff;
 }
 
 #header nav.use-middle ul li.is-middle {
