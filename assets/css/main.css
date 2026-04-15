@@ -2134,3 +2134,10 @@ hide-pannel-button:hover {
 	text-decoration: underline;
 	padding-bottom: 50px;
 }
+
+.generation-ia {
+	text-align: right;
+	text-decoration: overline;
+	font-style: italic;
+	font-size: medium;
+}
